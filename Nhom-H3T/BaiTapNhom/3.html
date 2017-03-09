@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- co giãn kích thước -->
+    <!-- co giãn kích thước ở mọi trạng thái -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
     <title>Panda Online</title>
-    <link href="/change.css" type="text/css" rel="stylesheet">
 
     <!-- bootstrap cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,21 +15,7 @@
     <style type="text/css">
         body {
             background: url(http://i.imgur.com/Nczsmy9.jpg) fixed no-repeat;
-        }
-        
-        section {
-            min-height: 1000px;
-            padding-top: 70px;
-        }
-        
-        .list-group-item {
-            font-weight: bold;
-            font-style: italic;
-        }
-        
-        footer {
-            text-align: right;
-            color: navy;
+            background-size: 100% 100%;
         }
     </style>
 </head>
@@ -45,7 +28,7 @@
     <!-- Phần đầu của trang web-->
     <header>
         <!-- thanh navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -56,7 +39,6 @@
                     </button>
                     <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Panda Online</a>
                 </div>
-
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="#" title="Luyện Tập">Luyện Tập</a></li>
@@ -76,87 +58,48 @@
             <!-- /.container-fluid -->
         </nav>
     </header>
-
     <!-- thân của mục kỹ năng sống -->
     <section>
         <div class="container">
-
-            <!-- Hàng thứ nhất -->
             <div class="row">
                 <!-- Cột thứ 1 những mấu chuyện ngắn -->
                 <div class="col-md-6">
-                    <h2>
-			  		<b><a style="color: green" href="#" title="Truyện Ngắn">TRUYỆN NGẮN</a></b>
-			  	</h2>
+                    <h2><b><a href="#" title="Truyện Ngắn">TRUYỆN NGẮN</a></b></h2>
                     <div class="list-group">
-                        <button type="button" class="list-group-item">Quạ Và Công</button>
-                        <button type="button" class="list-group-item">Thạch Sùng </button>
-                        <button type="button" class="list-group-item">Cái Cân Thủy Ngân</button>
-                        <button type="button" class="list-group-item">Sự Tích Chim Đa Đa</button>
-                        <button type="button" class="list-group-item">Ai Mua Hành Tôi</button>
-                        <button type="button" class="list-group-item">Võ Tòng Giết Hổ Trên Đồi Cảnh Dương</button>
+                        <b><button type="button" class="list-group-item">Sọ Dừa</button></b>
+                        <b><button type="button" class="list-group-item">Quạ Và Công</button></b>
+                        <b><button type="button" class="list-group-item">Thạch Sùng </button></b>
+                        <b><button type="button" class="list-group-item">Thánh Gióng</button></b>
+                        <b><button type="button" class="list-group-item">Cái Cân Thủy Ngân</button></b>
+                        <b><button type="button" class="list-group-item">Sự Tích Chim Đa Đa</button></b>
+                        <b><button type="button" class="list-group-item">Ai Mua Hành Tôi</button></b>
+                        <b><button type="button" class="list-group-item">Võ Tòng Giết Hổ Trên Đồi Cảnh Dương</button></b>
                     </div>
                     <button type="button" class="btn btn-warning">Xem thêm</button>
                 </div>
-
                 <!-- Cột thứ 2 quà tặng cuộc sống -->
                 <div class="col-md-6">
-                    <h2>
-			  		<b><a style="color: green" href="#" title="Quà Tặng Cuộc Sống">QUÀ TẶNG CUỘC SỐNG</a></b>
-			  	</h2>
+                    <h2><b><a href="#" title="Quà Tặng Cuộc Sống">QUÀ TẶNG CUỘC SỐNG</a></b></h2>
                     <div class="list-group">
-                        <button type="button" class="list-group-item">
-                            Gánh Xôi Của Bà
-                            <iframe width="520" height="300" src="https://www.youtube.com/embed/d5iJy6ZTw9c" frameborder="0" allowfullscreen>
-                            </iframe>
-                        </button>
-                        <button type="button" class="list-group-item">Lòng Tham</a>
-                            <button type="button" class="list-group-item">Trái Tim Yêu Thương</a>
-                                <button type="button" class="list-group-item">Chuyện Trên Vùng Cao</a>
-                                    <button type="button" class="list-group-item">Sói Gấu Và Cáo</a>
-                                        <button type="button" class="list-group-item">Tình Mẹ</a>
-                    </div>
-                    <button type="button" class="btn btn-warning">Xem thêm</button>
-                </div>
-            </div>
-
-            <!-- Hàng thứ hai -->
-            <div class="row">
-                <!-- Cột thứ 3 kỹ năng thoát hiểm -->
-                <div class="col-md-6">
-                    <h2>
-			  		<b><a style="color: green" href="#" title="Phòng Chống Tai Nạn">PHÒNG CHỐNG TAI NẠN</a></b>
-			  	</h2>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">Đuối Nước</a>
-                        <a href="#" class="list-group-item">Hỏa Hoạn</a>
-                        <a href="#" class="list-group-item">Điện Giật</a>
-                        <a href="#" class="list-group-item">Bắt Cóc</a>
-
-                    </div>
-                    <button type="button" class="btn btn-warning">Xem thêm</button>
-                </div>
-
-                <!-- Cột thứ 4 dạy nấu ăn -->
-                <div class="col-md-6">
-                    <h2>
-			  		<b><a style="color: green" href="#" title="Nấu Ăn Đơn Giản">NẤU ĂN ĐƠN GIẢN</a></b>
-			  	</h2>
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">Trứng Rán</a>
-                        <a href="#" class="list-group-item">Sanwich</a>
-                        <a href="#" class="list-group-item">Salad Rau Trộn</a>
-                        <a href="#" class="list-group-item">Rau Luộc</a>
+                        <b><button type="button" class="list-group-item">
+                     Gánh Xôi Của Bà
+                     <iframe width="520" height="300" src="https://www.youtube.com/embed/d5iJy6ZTw9c" frameborder="0" allowfullscreen>
+                     </iframe>
+                     </button></b>
+                        <b><button type="button" class="list-group-item">Lòng Tham</button></b>
+                        <b><button type="button" class="list-group-item">Trái Tim Yêu Thương</button></b>
+                        <b><button type="button" class="list-group-item">Chuyện Trên Vùng Cao</button></b>
+                        <!-- <button type="button" class="list-group-item">Sói Gấu Và Cáo</a>
+                     <button type="button" class="list-group-item">Tình Mẹ</a> -->
                     </div>
                     <button type="button" class="btn btn-warning">Xem thêm</button>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- chân trang -->
     <footer>
-        <b>© 2017 - VNU University of Engineering and Technology</b>
+        <div class="right-block text-right"><b>© 2017 - VNU University of Engineering and Technology</b></div>
     </footer>
 </body>
 
