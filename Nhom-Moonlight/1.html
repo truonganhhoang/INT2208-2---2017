@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MiniGameDemo</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link href="css/style.css" rel="stylesheet">
+<style type="text/css">		
+	@media all and (min-width: 320px) {
+	#header {
+		background-color: #F93;
+		}
+	#score {
+		font-size:150%;
+		}
+	#question {
+	font-size:450%;
+	color: #000;
+	}
+	#right {
+		color: #0C0;
+	}
+	#wrong {
+		color: #F00;
+		}
+	#return {
+		color: #000;
+		font-weight: bold;
+		}
+	.row {
+		text-align:center;
+		}	
+}
+</style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">		
+		<div class="col-md-12" id="header">
+			<h3>Right or Wrong <span class="label label-default">MiniGame</span></h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+					<h6>Chọn đúng hoặc sai !</h6>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progress">
+  <div class="progress-bar" id="timer-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" >
+    
+  </div>
+</div>
+				</div>
+			</div>
+			<div class="row">
+            	<div class="col-md-12" >
+					<p id="score">Score: 0</p>
+				</div>
+				<div class="col-md-12" >
+					<p id="question"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+				</div>
+				<div class="col-xs-2">
+					 
+					<button type="button" class="btn btn-default" id="right">
+						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="col-xs-2">
+					 
+					<button type="button" class="btn btn-default" id="wrong">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="col-xs-4">
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-12">
+                <p id="return"> Go!Go!Go! </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+        <button type="button" class="btn btn-default" id="retry">
+						<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+					</button>		
+        </div>
+        <div class="col-md-12">
+        <a href="#">&lt;&lt;Trở về trang chủ</a>		
+        </div>
+	</div>
+</div>
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src='js/rightwrong.js'></script>
+  </body>
+</html>
