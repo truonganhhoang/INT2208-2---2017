@@ -21,3 +21,5 @@
 	chức năng hiện người có nhiều bài viết được like nhiều nhất
 ## phi chức năng
 	giao diện thân thiện, dễ sử dụng
+## usecase
+	![usecase-instagram](/usecase1.jpg)
