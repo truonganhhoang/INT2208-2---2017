@@ -5,14 +5,13 @@
 - Nguyễn Hồng Sơn
 - Phạm Minh Ngọc
 - Phạm Tuấn Thiện
-### Ngôn ngữ sử dụng
-- HTML,CSS,Jquery
+### Công cụ
+- HTML,CSS
 - Bootstrap
+- Angular 2
 ### Các tính năng:
 - Thi online đề thi đại học, đề thi thử các trường
 - Hệ thống tài liệu, công thức làm nhanh phong phú
 - Giao diện thân thiện, dễ sử dụng
 ### Sơ đồ ca
 ### ![Sơ đồ ca](http://i.imgur.com/r2c9hX9.jpg)
-### ![Sơ đồ ca](http://i.imgur.com/fmBvcyU.jpg)
-### ![Sơ đồ ca](http://i.imgur.com/7UnUv4t.jpg)
