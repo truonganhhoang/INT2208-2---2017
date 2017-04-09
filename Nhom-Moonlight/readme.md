@@ -1,29 +1,31 @@
-#nhóm Moonlight
+# Nhóm Moonlight
 
-##danh sách thành viên nhóm:
+## Danh sách thành viên nhóm:
 
 * Phạm Bá Dương
 * Lê Ngọc Cường
 * Đàm Đình Đinh
 * Đoàn Thị Khánh Huyền
 
-##ứng dụng clone lại: Math for Kids
+## Ứng dụng clone lại: Math for Kids
 
-##use case 
+## Giao diện: Bootstrap
+## Framework: Angular 2
 
+## Use case 
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/loup72rw3h_blob)
 
-##Chọn Đúng & Sai
+## Chọn Đúng & Sai
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/slvanht00f_blob)
 
-##Điền dấu
+## Điền dấu
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/lsssf7nfat_blob)
 
-##Điền kết quả
+## Điền kết quả
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8tqd7e6mee_blob)
 
-##Sắp xếp
+## Sắp xếp
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/ctyj82lctn_blob)
 
-##Trang chủ
+## Trang chủ
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/xmhjsse3e8_blob)
