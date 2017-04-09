@@ -1,0 +1,32 @@
+#header {
+		background-color: #0CC;
+		}
+	.row {
+		text-align:center;
+		}
+	#score {
+		font-size: 150%;
+		}
+	#num0,#num1,#num2,#num3,#num4,#num5 {
+		font-size: 300%;
+		font-weight: bold;
+		}
+  #choices {
+     padding-bottom: 20px;
+   }
+  #back {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  #play {
+    color: #0C0;
+  }
+	@media all and (max-width: 480px) {
+	#score {
+		font-size: 75%;
+		}
+	#num0,#num1,#num2,#num3,#num4,#num5 {
+		font-size: 75%;
+		font-weight: bold;}
+   }
+
