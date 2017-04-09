@@ -1,0 +1,13 @@
+Feature: Video Courses
+  As an end user
+  In order to learn a course
+  I want to view videos of that course
+
+  Scenario: View Videos of the Course
+    Given I am at a section 1 of "Toan hoc" video course
+    When I click on part 1 of section
+    Then I see that part 1 of videos in that section appear
+    When I click on "Xem" button at "Bai tap"
+    Then I see the section's exercise
+    When I click on "Xem" button at "Ðap an"
+    Then I see the answer of exercise above
