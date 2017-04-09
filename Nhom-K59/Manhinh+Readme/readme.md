@@ -23,4 +23,4 @@
 ## phi chức năng
 	giao diện thân thiện, dễ sử dụng
 ## usecase
-	![usecase-instagram](/usecase-diagram.PNG)
+	![usecase-instagram](https://github.com/nguyentienviet123456/INT2208-2-2017/blob/master/Nhom-K59/Manhinh%2BReadme/usecase-diagram.PNG)
