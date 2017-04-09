@@ -22,5 +22,3 @@
 ## Điền kết quả
 
 ## Sắp xếp
-
-## Trang chủ
