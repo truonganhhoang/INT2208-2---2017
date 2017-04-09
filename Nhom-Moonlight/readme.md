@@ -1,24 +1,28 @@
-# Nhóm Moonlight
+#nhóm Moonlight
 
-## Danh sách thành viên nhóm:
+##danh sách thành viên nhóm:
+
 * Phạm Bá Dương
 * Lê Ngọc Cường
 * Đàm Đình Đinh
 * Đoàn Thị Khánh Huyền
 
-## Ứng dụng clone lại: Math for Kids
+##ứng dụng clone lại: Math for Kids
 
-## Giao diện: Bootstrap
+##use case 
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/loup72rw3h_blob)
 
-## Framework: Angular 2
+##Chọn Đúng & Sai
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/slvanht00f_blob)
 
-## Use case 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/4gcuapqybi_blob)
-## Đúng & Sai
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/cix5ti1gsp_blob)
-## Điền dấu
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/gi1kwfw1h9_blob)
-## Điền kết quả
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/desp4qrnq_blob)
-## Sắp xếp
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/bw6wc4zmgo_blob)
+##Điền dấu
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/lsssf7nfat_blob)
+
+##Điền kết quả
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8tqd7e6mee_blob)
+
+##Sắp xếp
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/ctyj82lctn_blob)
+
+##Trang chủ
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/xmhjsse3e8_blob)
