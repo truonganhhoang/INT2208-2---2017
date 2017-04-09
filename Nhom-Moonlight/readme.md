@@ -16,9 +16,15 @@
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/loup72rw3h_blob)
 
 ## Chọn Đúng & Sai
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/b0m1hnpcz2_blob)
 
 ## Điền dấu
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/whm2pqj180_blob)
 
 ## Điền kết quả
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/g2etieqojm_blob)
 
 ## Sắp xếp
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8r92o7euff_blob)
+
+
