@@ -1,0 +1,19 @@
+Feature: Truy cập chức năng từ trang chủ
+	In order to học tiếng Nhật
+	As một người dùng
+	I want to kiểm tra từ đã học
+
+	Scenario: Chọn Words
+	Given Tôi đang ở giao diện home
+	When Tôi chọn button Words
+	Then màn hình trang chủ chuyển sang giao diện danh sách các từ  Word List
+	
+	Scenario: Chọn Categories
+	Given Tôi đang ở giao diện home
+	When Tôi chọn button Lessons
+	Then màn hình chuyển sang danh sách các bài học Categories
+
+	Scenario: Chọn người dùng
+	Given Tôi đang ở màn hình home
+	When Tôi chọn hình ảnh người dùng
+	Then màn hình chuyển sang trang cá nhân
