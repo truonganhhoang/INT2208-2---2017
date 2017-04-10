@@ -19,18 +19,18 @@
     footer:
       license: "© 2016 Copyright by me"
       about: "About"
-    users:
-      new:
-        signup: "Create my account"
-        pwd_confirm: "Password Confirmation"
-      create:
-        signup_success: "Welcome to the Japan-Learning System"
-        signup_fail: "Opps ! Errors occurs while creating new User"
-        pwd_confirm: "Confirmation"
-    sessions:
-      new:
-        login: "Log in"
-        remember_me: "Remember me on this computer"
-        signup: "Sign up now!"
-      create:
-        invalid_login: "Invalid email/password combination"
+  users:
+    new:
+      signup: "Create my account"
+      pwd_confirm: "Password Confirmation"
+    create:
+      signup_success: "Welcome to the Japan-Learning System"
+      signup_fail: "Opps ! Errors occurs while creating new User"
+      pwd_confirm: "Confirmation"
+  sessions:
+    new:
+      login: "Log in"
+      remember_me: "Remember me on this computer"
+      signup: "Sign up now!"
+    create:
+      invalid_login: "Invalid email/password combination"
