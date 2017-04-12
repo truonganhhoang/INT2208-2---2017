@@ -7,26 +7,45 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ChangeprofileComponent } from './changeprofile/changeprofile.component';
+import { SearchingAndExploreComponent } from './searching-and-explore/searching-and-explore.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    ChangeprofileComponent,
+    SearchingAndExploreComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
+      //login
       {
         path: '',
         component: LoginComponent
       },
+      //home
       {
         path: 'home',
         component: HomeComponent
+      },
+      //profile
+      {
+        path: 'profile',
+        component: ProfileComponent
+      },
+      {
+        path: 'changeprofile',
+        component: ChangeprofileComponent
+      },
+      {
+        path: 'searching-and-explore',
+        component: SearchingAndExploreComponent
       }
     ])
   ],

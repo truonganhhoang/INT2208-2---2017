@@ -1,6 +1,7 @@
 Feature: Searching and Explore 
 	As an user
 	I want to looking for my friend and explore people
+	So I have to login
 Scenario: Search people
 	Given: When people at homepage 
 	When: People click on "searching" symbol
