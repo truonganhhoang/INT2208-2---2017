@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ChangeprofileComponent } from './changeprofile/changeprofile.component';
 import { SearchingAndExploreComponent } from './searching-and-explore/searching-and-explore.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SearchingAndExploreComponent } from './searching-and-explore/searching-
     HomeComponent,
     ProfileComponent,
     ChangeprofileComponent,
-    SearchingAndExploreComponent
+    SearchingAndExploreComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,10 @@ import { SearchingAndExploreComponent } from './searching-and-explore/searching-
       {
         path: 'searching-and-explore',
         component: SearchingAndExploreComponent
+      },
+      {
+        path: 'post',
+        component: PostComponent
       }
     ])
   ],
