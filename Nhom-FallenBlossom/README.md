@@ -33,7 +33,7 @@
    - Cải tiến giao diện đồ họa đẹp hơn, dễ sử dụng hơn
    - Phát triển trên cả nền Mobile và nền Web
 ## Use case: 
-<img src="http://i.imgur.com/5QeYG2P.jpg">
+<img src="http://i.imgur.com/fUp9bQp.png">
 
 ## Kịch bản các Use case
 
