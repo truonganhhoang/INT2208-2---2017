@@ -8,28 +8,28 @@ In order to thư giãn và kiểm tra kiến thức đã học được
 	Then màn hình lựa chọn các màn chơi mức độ dễ hiện ra
 	And tôi chọn màn chơi và chơi
   Scenario: chơi trò chơi
-   Given tôi đã chọn mức độ chơi và màn chơi, câu hỏi cho tôi hiện ra 12 + 15 = ??
+   Given tôi đang ở màn chơi 1, câu hỏi hiện ra 12 + 15 = ??
 	When tôi chọn đáp án 11
 	Then tôi nhận kết quả sai
 	And màn hình hiển thị Sai rồi, câu sai tăng 1
 	When tôi chọn <câu tiếp>
 	Then tôi nhìn thấy câu hỏi tiếp theo	
   Scenario: chơi trò chơi
-   Given tôi đã chọn mức độ chơi và màn chơi, câu hỏi cho tôi hiện ra
+    Given tôi đang ở màn chơi 1, câu hỏi hiện ra 12 + 15 = ??
 	When tôi chọn đáp án 25
 	Then tôi nhận kết quả sai
 	And màn hình hiển thị Sai rồi, câu sai tăng 1
 	When tôi chọn <câu tiếp>
 	Then tôi nhìn thấy câu hỏi tiếp theo	
   Scenario: chơi trò chơi
-   Given tôi đã chọn mức độ chơi và màn chơi, câu hỏi cho tôi hiện ra
+    Given tôi đang ở màn chơi 1, câu hỏi hiện ra 12 + 15 = ??
 	When tôi chọn đáp án 23
 	Then tôi nhận kết quả sai
 	And màn hình hiển thị Sai rồi, câu sai tăng 1
 	When tôi chọn <câu tiếp>
 	Then tôi nhìn thấy câu hỏi tiếp theo	
   Scenario: chơi trò chơi
-    Given tôi đã chọn mức độ chơi và màn chơi, câu hỏi cho tôi hiện ra
+     Given tôi đang ở màn chơi 1, câu hỏi hiện ra 12 + 15 = ??
 	When tôi chọn đáp án 27
 	Then tôi nhận kết quả đúng
 	And màn hình hiển thị Chính xác, câu đúng tăng 1
