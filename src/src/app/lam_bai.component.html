@@ -1,0 +1,41 @@
+<content>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h2>ĐỀ THI ĐẠI HỌC MÔN LÝ KHỐI A, A1 NĂM 2014</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Đề bài</li>
+                <li class="list-group-item" *ngFor="let quest of questions">
+                    <div class="well well-lg">
+                        <span class="">{{quest.id}}. {{quest.cau_hoi}}</span>
+                        <hr>
+                        <span>Chọn câu trả lời đúng:</span>
+                        <div class="radio">
+                            <label><input type="radio" value="" name = "a">{{quest.lua_chon[0]}}</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="" name = "a">{{quest.lua_chon[0]}}</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="" name = "a">{{quest.lua_chon[0]}}</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" value="" name = "a">{{quest.lua_chon[0]}}</label>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+                </div>
+                <div class="col-md-2">
+                    <p>Thời gian làm bài:</p>
+                    <span id="h">1</span> :
+                    <span id="m">30</span> :
+                    <span id="s">0</span>
+                </div>
+            </div>
+            <a routerLink="/nop_bai" routerLinkActive="active">
+                <input type="submit" class="btn btn-success col-xs-3 well-sm col-md-offset-4" value="Nộp Bài">
+            </a>
+        </div>
+    </content>
