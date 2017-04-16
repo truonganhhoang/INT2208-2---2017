@@ -37,7 +37,7 @@
 
 ## Kịch bản các Use case
 
-* **Các Features:** https://github.com/tuananh97/INT2208-2-2017/tree/master/Nhom-FallenBlossom/Feature
+* **Các Features:** https://github.com/tuananh97/INT2208-2-2017/tree/master/Nhom-FallenBlossom/userstory
 * **Các Uni-test:** 
 
 ## Khung ứng dụng lựa chọn
