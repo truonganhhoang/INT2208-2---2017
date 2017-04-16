@@ -17,11 +17,10 @@
   - Các bài học về số; cách cộng, trừ, nhân, chia số...
   - Bảng cửu chương
   - Cách tính nhanh Vedic
-
 #### Trò chơi
   - Trò chơi gồm có 3 mức độ Dễ, Trung bình và Khó
   - Mỗi mức độ có 10 Level, mỗi Level cần trả lời đúng 5 câu hỏi để vượt qua. Sau khi vượt qua 1 Level mới mở được Level sau
-  - Cách chơi: Click chuột vào ô để chọn đáp án, nếu trả lời đúng sẽ hiện nút Next, click vào để hiện câu mới.
+  - Cách chơi: Click chuột vào checkbox để chọn đáp án, click vào "Câu tiếp " để hiện câu mới.
   - Các câu hỏi gắn với hình minh họa trái cây, các vật dụng quen thuộc đối với các bé cấp 1
 ### Các công cụ thực hiện phần mềm 
    - Thiết kế giao diện: Bootstrap Frame,...
