@@ -6,7 +6,7 @@ Feature: Bé học toán
      Given tôi đang ở màn hình học toán
 	 When tôi click vào ảnh các số từ 1 đến 10
 	 Then bảng số phóng to ra toàn màn hình
-	 And tôi thấy các số cùng hình minh họa thật rõ ràng
+	 And tôi thấy các số cùng hình minh họa 
 	 When tôi click “x”
 	 Then màn ảnh số nhỏ lại như ban đầu
   Scenario: Học phép tính cộng
