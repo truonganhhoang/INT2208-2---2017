@@ -33,7 +33,8 @@
    - Phát triển trên cả nền Mobile và nền Web
 ## Use case: 
 <img src="http://i.imgur.com/M6hOgbG.jpg">
-
+<img src=" http://i.imgur.com/u0mFdtP.jpg">
+                   
 ## Kịch bản các Use case
 
 * **Các Features:** https://github.com/tuananh97/INT2208-2-2017/tree/master/Nhom-FallenBlossom/userstory
