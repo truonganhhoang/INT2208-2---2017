@@ -1,13 +1,19 @@
+# Nhóm BKA
 Ứng dụng học tiếng Nhật miễn phí
 
-Dự án lấy ý tưởng từ một project của công ty Framgia
+Gồm các chức năng chính:
+  - chọn các bài học lessons gồm nhiều từ
+  - chọn nghĩa tiếng việt của từ
+  - xem kết quả đã học được
+
+Công cụ sử dụng:
+  - Bootstrap
+  - HTML & CSS, Javascript
+  - Rails 5
+
+Ứng dụng tham khảo: https://murmuring-coast-53644.herokuapp.com
 
 Thành viên: Nguyễn Trung Hiếu (NT)
 	    Lê Tuấn Sơn
 	    Nguyễn Quốc Cường
 	    Phạm Xuân Trường
-
-Chức năng chính:- Lesson gồm có các category là các bài học như Basic 500, Basic 1000, ...
-		- Word list: xem lại các từ mà user đã học, có thể xuất ra file excel hay pdf
-		- Các lesson được chia nhỏ thành từng phần (khoảng 20 từ 1 lần học)
-		- Khi học xong từng phần sẽ được lưu lại vào activity của user
