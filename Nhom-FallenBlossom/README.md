@@ -33,7 +33,7 @@
    - Phát triển trên cả nền Mobile và nền Web
 ## Use case: 
 <img src="http://i.imgur.com/M6hOgbG.jpg">
-<img src=" http://i.imgur.com/u0mFdtP.jpg">       
+<img src="http://i.imgur.com/u0mFdtP.jpg">       
 
 ## Kịch bản các Use case
 
