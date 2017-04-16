@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bé vui học toán</title>
+	    <!-- co giãn kích thước -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+        <!-- angularjs CDN-->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	    <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+	    <!-- See picture -->
+        <link rel="stylesheet" href="../dist/css/lightbox.min.css">
+	     <!-- Font  -->
+	    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <!-- Play video -->
+	     <script src="Video.js"></script>
+    </head>
+
+    <body ng-app="app" background="http://i.imgur.com/vERG8Wy.jpg" style="background-color:#33ccff;">
+	    <p align="center"><font  size="9" color="#FF0000"><b><span style="font-family: 'Roboto Slab', serif;">BÉ VUI HỌC TOÁN</span></b> </font></p>
+                <div class="col-md-3">
+                   <h2><b><span style="font-family: 'Roboto Slab', serif; color:#660033">Học số</span></b></h2>
+                   <a class="example-image-link" href="http://i.imgur.com/WDzxX9S.jpg" data-lightbox="example-set" ><img class="example-image" src="http://i.imgur.com/kLhjW6t.jpg" alt=""/></a>                        
+                </div>
+				<div class="col-md-3">
+				   <h2><b><span style="font-family: 'Roboto Slab', serif; color:#660033">Học hình học</span></b> </h2>
+				   <a class="example-image-link" href="http://i.imgur.com/Arhu48c.jpg" data-lightbox="example-set" ><img class="example-image" src="http://i.imgur.com/S9KR3Nc.jpg" alt="" /></a>
+                </div>  
+				<div class="col-md-3">
+				   <h2><b><span style="font-family: 'Roboto Slab', serif; color:#660033">Tính chất cơ bản</span></b> </h2>
+				   <a class="example-image-link" href="	http://i.imgur.com/MaJll9g.jpg" data-lightbox="example-set" ><img class="example-image" src="http://i.imgur.com/9g0v0qN.jpg" alt="" /></a>
+                </div>  
+				<div class="col-md-3"> 
+				   <h2><b><span style="font-family: 'Roboto Slab', serif;color:#660033">Học bảng cửu chương</span></b> </h2>
+                   <a class="example-image-link" href="http://i.imgur.com/fGWeczl.jpg" data-lightbox="example-set" ><img class="example-image" src="http://i.imgur.com/FPiaNaj.jpg" alt="" /></a>
+                </div>  
+                   
+				<div class="col-md-5 col-md-offset-1" ng-controller="control">
+                     <center><h2><b><span style="font-family: 'Roboto Slab', serif;color:#660033">Các phép tính cơ bản</span></b></h2></center>
+                    <div class="list-group" >
+                        <b>
+                          <button type="button" class="list-group-item" ng-click="playVideo1()"><span style="font-family: 'Roboto Slab', serif;"><b>Phép tính cộng</b></span></button>
+                            <iframe ng-show="Videos[0]" width="100%" height="400" src="https://www.youtube.com/embed/E2jxM8r_kA4?list=PLAH_Bdis82-DTUwMKtQK3NphHMzDNfRwa" frameborder="0" allowfullscreen>
+                            </iframe>
+                          <button type="button" class="list-group-item" ng-click="playVideo2()"><span style="font-family: 'Roboto Slab', serif;"><b>Phép tính trừ</b></span></button>
+                            <iframe ng-show="Videos[1]" width="100%" height="400" src="https://www.youtube.com/embed/eWLdxLa7w5Y?list=PLAH_Bdis82-CFfaLwHweW1ucBmXy_qdQX" frameborder="0" allowfullscreen>
+                            </iframe>
+						  <button type="button" class="list-group-item" ng-click="playVideo3()"><span style="font-family: 'Roboto Slab', serif;"><b>Phép tính nhân</b></span></button>
+                            <iframe ng-show="Videos[2]" width="100%" height="400" src="https://www.youtube.com/embed/N2O8AsKoSs4?list=PLOrHt0CdT6FB-VmnvFZU86x6t9Sh9d0AO" frameborder="0" allowfullscreen>
+                            </iframe>
+                          <button type="button" class="list-group-item" ng-click="playVideo4()"><span style="font-family: 'Roboto Slab', serif;"><b>Phép tính chia</b></span></button>
+                            <iframe ng-show="Videos[3]" width="100%" height="400" src="https://www.youtube.com/embed/L8GjSLLEIjw?list=PLAH_Bdis82-DgNUexyNRxBZrkZjYzwzOV" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </b>
+                    </div>  
+				</div>
+				<div class="col-md-5" ng-controller="control">
+				     <center><h2><b><span style="font-family: 'Roboto Slab', serif;color:#660033">Học tính nhanh Vedic </span></b></h2></center>
+                    <div class="list-group" >
+                        <b>
+                          <button type="button" class="list-group-item" ng-click="playVideo5()"><span style="font-family: 'Roboto Slab', serif;"><b>Cộng nhanh các số với nhau</b></span></button>
+                            <iframe ng-show="Videos[4]" width="100%" height="400" src="https://www.youtube.com/embed/CO8rWYO_s_c?list=PL7-YOByZ7iwxKZqPZQYc4uTcbY3rrWoZj" frameborder="0" allowfullscreen>
+                            </iframe>
+                          <button type="button" class="list-group-item" ng-click="playVideo6()"><span style="font-family: 'Roboto Slab', serif;"><b>Trừ nhanh các số với nhau</b></span></button>
+                            <iframe ng-show="Videos[5]" width="100%" height="400" src="https://www.youtube.com/embed/PW3dfJh9Ohg?list=PL7-YOByZ7iwxKZqPZQYc4uTcbY3rrWoZj" frameborder="0" allowfullscreen>
+                            </iframe>
+						  <button type="button" class="list-group-item" ng-click="playVideo7()"><span style="font-family: 'Roboto Slab', serif;"><b>Nhân nhanh 2 số có 2 chứ số</b></span></button>
+                            <iframe ng-show="Videos[6]" width="100%" height="400" src="https://www.youtube.com/embed/l3BDv1Saqg0" frameborder="0" allowfullscreen>
+                            </iframe>
+                          <button type="button" class="list-group-item" ng-click="playVideo8()"><span style="font-family: 'Roboto Slab', serif;"><b>Chia nhanh các số với nhau</b></span></button>
+                            <iframe ng-show="Videos[7]" width="100%" height="400" src="https://www.youtube.com/embed/h_AvNBt8zbU?list=PL7-YOByZ7iwxKZqPZQYc4uTcbY3rrWoZj" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </b>
+                    </div>
+                </div>	 
+				<div class="col-md-5 col-md-offset-4">
+                <footer>
+                <div class="right-block text-center"><b>© Fallen Blossom Team - VNU University of Engineering and Technology</b></div>
+                </footer> 
+                 </div>					
+    </body>
+</html>
