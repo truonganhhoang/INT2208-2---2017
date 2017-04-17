@@ -1,4 +1,4 @@
-﻿http://behoctoan.freevnn.com
+## Websites http://behoctoan.freevnn.com
 
 ## Nhóm FallenBlossom
   #### Đào Đức Hòa
@@ -17,11 +17,10 @@
   - Các bài học về số; cách cộng, trừ, nhân, chia số...
   - Bảng cửu chương
   - Cách tính nhanh Vedic
-
 #### Trò chơi
   - Trò chơi gồm có 3 mức độ Dễ, Trung bình và Khó
   - Mỗi mức độ có 10 Level, mỗi Level cần trả lời đúng 5 câu hỏi để vượt qua. Sau khi vượt qua 1 Level mới mở được Level sau
-  - Cách chơi: Click chuột vào ô để chọn đáp án, nếu trả lời đúng sẽ hiện nút Next, click vào để hiện câu mới.
+  - Cách chơi: Click chuột vào checkbox để chọn đáp án, click vào "Câu tiếp " để hiện câu mới.
   - Các câu hỏi gắn với hình minh họa trái cây, các vật dụng quen thuộc đối với các bé cấp 1
 ### Các công cụ thực hiện phần mềm 
    - Thiết kế giao diện: Bootstrap Frame,...
@@ -33,11 +32,12 @@
    - Cải tiến giao diện đồ họa đẹp hơn, dễ sử dụng hơn
    - Phát triển trên cả nền Mobile và nền Web
 ## Use case: 
-<img src="http://i.imgur.com/5QeYG2P.jpg">
+<img src="http://i.imgur.com/M6hOgbG.jpg">
+<img src="http://i.imgur.com/u0mFdtP.jpg">       
 
 ## Kịch bản các Use case
 
-* **Các Features:** https://github.com/tuananh97/INT2208-2-2017/tree/master/Nhom-FallenBlossom/Feature
+* **Các Features:** https://github.com/tuananh97/INT2208-2-2017/tree/master/Nhom-FallenBlossom/userstory
 * **Các Uni-test:** 
 
 ## Khung ứng dụng lựa chọn

@@ -1,0 +1,18 @@
+[0410/185654.969:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0410/185655.016:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0410/185655.032:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0410/185934.427:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0410/185934.474:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0410/185934.490:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0412/065741.253:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0412/065741.300:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0412/065741.300:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0412/070013.172:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0412/070013.203:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0412/070013.203:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
+[0414/185158.085:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0414/185158.100:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[0414/185158.100:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0415/090515.449:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\temp\settings.dat: Access is denied. (0x5)
+[0415/090515.496:ERROR:registration_protocol_win.cc(60)] WaitNamedPipe: The system cannot find the file specified. (0x2)
+[0415/090515.511:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
