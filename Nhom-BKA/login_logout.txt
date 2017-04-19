@@ -1,0 +1,18 @@
+Feature: Log in feature
+	In order to log in
+	As an user
+	I want to log in to the wesite
+
+	Scenario: Log in is incorrect
+	Given I am at the home page
+	When I click button Log in
+	Then I fill in username and password blank
+	And I fill in wrong username or password
+	Then "Invalid email/password combination" should show
+	
+	Scenario: Log in is correct
+	Given I am at the home page
+	When I click button Log in
+	Then I fill in username and password blank
+	Then "Welcome to the Japan-Learning System" should show
+	Then I see the user profile page
