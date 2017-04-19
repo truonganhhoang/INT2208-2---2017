@@ -14,7 +14,7 @@ Feature: Online Examination
 
   Scenario: Doing the Exam
     Given I am at the "De thi so 1"
-    And I see 50 questions
+    And I see 5 questions
     Then I started with question 1
     When I click on answer "A"
     Then I see answer "A" is checked
