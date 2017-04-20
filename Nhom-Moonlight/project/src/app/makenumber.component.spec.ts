@@ -70,7 +70,6 @@ describe('Make Number test', () => {
     const choice7 = fixture.debugElement.query(By.css('#num7'));
     const choice8 = fixture.debugElement.query(By.css('#num8'));
     var app = fixture.debugElement.componentInstance;
-    var score = app.score;
     btn.triggerEventHandler('click', null);
     app.num = [5,-4,-7,-7,-8,-3,6,-7,3];
     app.amount = 3;
@@ -78,7 +77,7 @@ describe('Make Number test', () => {
     choice2.triggerEventHandler('click', null);
     choice7.triggerEventHandler('click', null);
     fixture.detectChanges();
-    expect(app.score).toEqual(score);
+    expect(app.score).toEqual(0);
     expect(app.return).toEqual('KẾT THÚC');
   }));
 });
