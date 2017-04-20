@@ -12,6 +12,8 @@
 ## Giao diện: Bootstrap
 ## Framework: Angular 2
 
+## Deploy: https://math-f4468.firebaseapp.com
+
 ## Use case 
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/loup72rw3h_blob)
 
