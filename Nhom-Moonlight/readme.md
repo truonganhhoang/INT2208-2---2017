@@ -29,4 +29,13 @@
 ## Sắp xếp
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/8r92o7euff_blob)
 
+## So sánh phép tính
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/lfjjoahxe2_blob)
+
+## Chọn các số hạng
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/1ogusfzskl_blob)
+
+## Luyện trí nhớ
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/ykff111jp4_blob)
+
 
