@@ -8,6 +8,7 @@ import { FTRComponent }   from './findresult.component';
 import { RWComponent } from './rightwrong.component';
 import { WMComponent } from './whatmissing.component';
 import { SBComponent } from './smallbig.component';
+import { CCComponent } from './cal-comp.component';
 import { MNComponent } from './makenumber.component';
 import { MemComponent } from './memory.component';
 import { HomeComponent } from './home.component';
@@ -35,6 +36,7 @@ import { AppRoutingModule } from './app-routing.module';
     SBComponent,
     MNComponent,
     MemComponent,
+    CCComponent,
   ],
   bootstrap: [ AppComponent ]
 })

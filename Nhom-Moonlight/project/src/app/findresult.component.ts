@@ -13,7 +13,6 @@ import { Component } from '@angular/core';
     <title>{{title}}</title>
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   </head>
   <body>
@@ -118,7 +117,7 @@ import { Component } from '@angular/core';
 			</div>
 		</div>
 	</div>
-	<div class="row" style="padding-bottom: 15px">
+	<div class="row" style="padding-bottom: 15px; padding-bottom: 55px">
 		<div class="col-md-12">
 			<a routerLink="/home" routerLinkActive="active" (click)="end()">Trang chủ</a>
 		</div>
@@ -156,7 +155,7 @@ export class FTRComponent {
 
   init(): void {
 	this.val1 = Math.floor(Math.random()*20);
-	this.val2 = Math.floor(Math.random()*20);
+	this.val2 = Math.floor(Math.random()*20)+1;
 	var sign = Math.floor(Math.random()*4);
 	switch(sign) {
 		case 0:

@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 					<div class="row" >
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<img alt="Đúng hay sai" src="image/rightwrong.jpg">
+								<img alt="Đúng hay sai" src="https://imageshack.com/a/img923/1853/VWafBj.jpg">
 								<div class="caption">
 									<h4>
 										Đúng hay sai
@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<img alt="Chọn kết quả đúng" src="image/findresult.jpg">
+								<img alt="Chọn kết quả đúng" src="https://imageshack.com/a/img924/4114/vbFZBY.jpg">
 								<div class="caption">
 									<h4>
 										Chọn kết quả đúng
@@ -42,7 +42,7 @@ import { Component } from '@angular/core';
 						</div>
 						<div class="col-md-4">
 							<div class="thumbnail">
-								<img alt="Tìm dấu phép tính" src="image/whatmissing.jpg">
+								<img alt="Tìm dấu phép tính" src="https://imageshack.com/a/img923/9206/73dqwX.jpg">
 								<div class="caption">
 									<h4>
 										Tìm dấu phép tính
