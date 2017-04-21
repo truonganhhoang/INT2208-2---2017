@@ -9,7 +9,7 @@ Scenario: Tôi chọn đúng
     And Màn hình tô màu đỏ vào các ô số là 3 7
     And Màn hình tô màu xanh vào các ô số là 8 10
     And Màn hình hiển thị yêu cầu "Tính tổng các số trong những ô màu ĐỎ"
-    And Màn hình chuyển các số đã cho thành dấu "?"
+    And Màn hình chuyển các số đã cho thành dấu "?" sau 5 giây
     And Màn hình hiển thị 4 kết quả dưới các ô đó là 8 10 4 18
     When Tôi chọn số 10
     Then Tôi được cộng thêm 5 điểm
@@ -21,7 +21,7 @@ Scenario: Tôi chọn sai
     And Màn hình tô màu đỏ vào các ô số là 3 7
     And Màn hình tô màu xanh vào các ô số là 8 10
     And Màn hình hiển thị yêu cầu "Tính tổng các số trong những ô màu ĐỎ"
-    And Màn hình chuyển các số đã cho thành dấu "?"
+    And Màn hình chuyển các số đã cho thành dấu "?" sau 5 giây
     And Màn hình hiển thị 4 kết quả dưới các ô đó là 8 10 4 18
     When Tôi chọn số 18
     Then Màn hình thông báo "Chúc em may mắn lần sau"
