@@ -1,7 +1,7 @@
 Feature: Chơi "Đúng hay sai"
     As a người dùng
     I want to luyện tập các phép tính cơ bản
-    So that I chơi mini game "Đúng hay sai"
+    So that Tôi chơi mini game "Đúng hay sai"
 
 Scenario: Tôi chọn đúng
     Given Tôi đang ở màn hình "Đúng hay sai"
@@ -10,7 +10,7 @@ Scenario: Tôi chọn đúng
     Then Màn hình thông báo "Chuẩn rồi"
     And Tôi được cộng thêm 1 điểm
     And Màn hình chuyển sang phép tính mới
-
+    
 Scenario: Tôi chọn sai
     Given Tôi đang ở màn hình "Đúng hay sai"
     And Màn hình hiển thị phép tính 5-4=5
