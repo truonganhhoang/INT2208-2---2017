@@ -1,0 +1,20 @@
+#header {
+		background-color: aquamarine;
+		}
+	#question {
+		font-size: 400%;
+		}
+	#greater,#equal,#smaller {
+		font-size: 200%;
+		font-weight: bold;
+    background-color: #FFF;
+		}
+	.row {
+		text-align:center;
+		}
+	#return {
+		font-weight: bold;
+		}
+    #play {
+      color : #0C0;
+    }

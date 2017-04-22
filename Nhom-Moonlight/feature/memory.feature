@@ -1,6 +1,6 @@
 Feature: Chơi "Luyện trí nhớ" 
     As a người dùng
-    I want to luyện tập các phép tính cơ bản
+    I want to luyện tập các phép tính nâng cao
     So that Tôi chơi mini game "Luyện trí nhớ"
 
 Scenario: Tôi chọn đúng

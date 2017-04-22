@@ -1,6 +1,6 @@
 Feature: Chơi "Chọn các số hạng" 
     As a người dùng
-    I want to luyện tập các phép tính cơ bản
+    I want to luyện tập các phép tính nâng cao
     So that Tôi chơi mini game "Chọn các số hạng"
 
 Scenario: Tôi chọn đúng

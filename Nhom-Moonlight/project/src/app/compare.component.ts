@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 									<div class="row">
 										<div class="col-md-4">
 											<div class="thumbnail">
-												<img alt="Sắp xếp" src="image/smallbig.jpg">
+												<img alt="Sắp xếp các số" src="https://imageshack.com/a/img923/5852/51KUyV.jpg">
 												<div class="caption">
 													<h4>
 														Sắp xếp các số
@@ -26,16 +26,16 @@ import { Component } from '@angular/core';
 										</div>
 										<div class="col-md-4">
 											<div class="thumbnail">
-												<img alt="Số bé Số lớn" src="image/coming.jpg">
+												<img alt="So sánh phép tính" src="https://imageshack.com/a/img923/821/mEsAXB.jpg">
 												<div class="caption">
 													<h4>
-														Coming Soon
+														So sánh phép tính
 													</h4>
 													<p>
-														Coming soon
+														So sánh hai phép tính đã cho!
 													</p>
 													<p style="text-align: center">
-														<a class="btn btn-primary disabled" href="#">Bắt đầu</a>
+														<a class="btn btn-primary" routerLink="/calcomp" routerLinkActive="active">Bắt đầu</a>
 													</p>
 												</div>
 											</div>

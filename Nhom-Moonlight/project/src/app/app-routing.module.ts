@@ -6,6 +6,7 @@ import { FTRComponent }   from './findresult.component';
 import { RWComponent } from './rightwrong.component';
 import { WMComponent } from './whatmissing.component';
 import { SBComponent } from './smallbig.component';
+import { CCComponent } from './cal-comp.component';
 import { MNComponent } from './makenumber.component';
 import { MemComponent } from './memory.component';
 import { CaculatingComponent } from './caculating.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'rightwrong',  component: RWComponent },
   { path: 'whatmissing',  component: WMComponent },
   { path: 'smallbig',  component: SBComponent },
+  { path: 'calcomp',  component: CCComponent },
   { path: 'makenumber',  component: MNComponent },
   { path: 'memory',  component: MemComponent },
   { path: 'home',  component: HomeComponent },

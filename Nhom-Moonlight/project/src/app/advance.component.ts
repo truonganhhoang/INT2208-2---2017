@@ -10,32 +10,32 @@ import { Component } from '@angular/core';
 									<div class="row">
 										<div class="col-md-4">
 											<div class="thumbnail">
-												<img alt="Chọn các số hạng" src="image/coming.jpg">
+												<img alt="Chọn các số hạng" src="https://imageshack.com/a/img922/9358/G811ky.jpg">
 												<div class="caption">
 													<h4>
-														Coming Soon
+														Chọn các số hạng
 													</h4>
 													<p>
-														Coming soon
+														Chọn số ô đã cho để được kết quả!
 													</p>
 													<p style="text-align: center">
-														<a class="btn btn-primary disabled" routerLink="/makenumber" routerLinkActive="active">Bắt đầu</a>
+														<a class="btn btn-primary" routerLink="/makenumber" routerLinkActive="active">Bắt đầu</a>
 													</p>
 												</div>
 											</div>
 										</div>
 										<div class="col-md-4">
 											<div class="thumbnail">
-												<img alt="Luyện trí nhớ" src="image/coming.jpg">
+												<img alt="Luyện trí nhớ" src="https://imageshack.com/a/img923/9200/ozKp9y.jpg">
 												<div class="caption">
 													<h4>
-														Coming Soon
+														Luyện trí nhớ
 													</h4>
 													<p>
-														Coming soon
+														Ghi nhớ và tính tổng!
 													</p>
 													<p style="text-align: center">
-														<a class="btn btn-primary disabled" routerLink="/memory" routerLinkActive="active">Bắt đầu</a>
+														<a class="btn btn-primary" routerLink="/memory" routerLinkActive="active">Bắt đầu</a>
 													</p>
 												</div>
 											</div>

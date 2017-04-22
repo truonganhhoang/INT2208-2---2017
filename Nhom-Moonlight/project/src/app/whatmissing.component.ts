@@ -116,7 +116,7 @@ import { AppComponent } from './app.component';
 			</div>
 		</div>
 	</div>
-	<div class="row" style="padding-bottom: 15px">
+	<div class="row" style="padding-bottom: 15px; padding-bottom: 55px">
 		<div class="col-md-12">
 			<a routerLink="/home" routerLinkActive="active" (click)="end()">Trang chủ</a>
 		</div>

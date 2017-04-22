@@ -1,6 +1,6 @@
 Feature: Chơi "So sánh phép tính" 
     As a người dùng
-    I want to luyện tập các phép tính cơ bản
+    I want to luyện tập các phép so sánh
     So that Tôi chơi mini game "So sánh phép tính"
 
 Scenario: Tôi chọn đúng
@@ -20,4 +20,4 @@ Scenario: Tôi chọn sai
     And Màn hình thay dấu "?" thành dấu "<"
     And Màn hình hiển thị kết quả "(9)" dưới phép tính "9x1"
     And Màn hình hiển thị kết quả "(16)" dưới phép tính "8x2"
-    And Màn hình dừng chạy thời gian để kết thúc trò chơi
+    And Màn hình dừng trò chơi

@@ -16,6 +16,7 @@
     text-align: center;
     position: fixed;
     bottom: 0px;
+    width: 100%;
     }
 	.thumbnail {
 		background-color: #CCC;

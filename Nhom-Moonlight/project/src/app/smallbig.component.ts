@@ -104,7 +104,7 @@ import { Component } from '@angular/core';
 		</div>
 	</div>
 	<div class="row" id="back">
-		<div class="col-md-12">
+		<div class="col-md-12" style="padding-bottom: 55px">
 			<a routerLink="/home" routerLinkActive="active" (click)="end()">Trang chủ</a>
 		</div>
 	</div>

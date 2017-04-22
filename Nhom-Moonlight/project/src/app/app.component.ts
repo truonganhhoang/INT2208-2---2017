@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 
 @Component({
@@ -16,7 +15,6 @@ import { AppRoutingModule } from './app-routing.module';
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
-
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   </head>
   <body>

@@ -9,9 +9,7 @@ describe('Make Number test', () => {
   beforeEach(() => {
     jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
     TestBed.configureTestingModule({
-      declarations: [
-        MNComponent
-      ],
+      declarations: [MNComponent],
     });
     TestBed.compileComponents();
   });
@@ -33,7 +31,7 @@ describe('Make Number test', () => {
     fixture.detectChanges();
     expect(compiled.querySelector('h3').textContent).toContain('Chọn các số hạng');
   }));
-  it('should be right answer when question is "5 -4 -7 -7 -8 -3 6 -7 3" with amount is "3", result is "1" and I choose "5 -7 3"', async(() => {
+  it('should be right answer when question is "0 3 8 9 1 10 4 7 5" with amount is "3", result is "8" and I choose "0 3 5"', async(() => {
     const fixture = TestBed.createComponent(MNComponent);
     const btn = fixture.debugElement.query(By.css('#play'));
     const choice0 = fixture.debugElement.query(By.css('#num0'));
@@ -47,17 +45,17 @@ describe('Make Number test', () => {
     const choice8 = fixture.debugElement.query(By.css('#num8'));
     var app = fixture.debugElement.componentInstance;
     btn.triggerEventHandler('click', null);
-    app.num = [5,-4,-7,-7,-8,-3,6,-7,3];
+    app.num = [0,3,8,9,1,10,4,7,5];
     app.amount = 3;
-    app.result = 1;
+    app.result = 8;
     choice0.triggerEventHandler('click', null);
-    choice2.triggerEventHandler('click', null);
+    choice1.triggerEventHandler('click', null);
     choice8.triggerEventHandler('click', null);
     fixture.detectChanges();
     expect(app.score).toEqual(3);
     expect(app.return).toEqual('Tốt lắm!');
   }));
-  it('should be wrong answer when question is "5 -4 -7 -7 -8 -3 6 -7 3" with amount is "3" and I choose "5 -7 -7"', async(() => {
+  it('should be wrong answer when question is "0 3 8 9 1 10 4 7 5" with amount is "3", result is "8" and I choose "8 0 1"', async(() => {
     const fixture = TestBed.createComponent(MNComponent);
     const btn = fixture.debugElement.query(By.css('#play'));
     const choice0 = fixture.debugElement.query(By.css('#num0'));
@@ -71,11 +69,12 @@ describe('Make Number test', () => {
     const choice8 = fixture.debugElement.query(By.css('#num8'));
     var app = fixture.debugElement.componentInstance;
     btn.triggerEventHandler('click', null);
-    app.num = [5,-4,-7,-7,-8,-3,6,-7,3];
+    app.num = [0,3,8,9,1,10,4,7,5];
     app.amount = 3;
-    choice0.triggerEventHandler('click', null);
+    app.result = 8;
     choice2.triggerEventHandler('click', null);
-    choice7.triggerEventHandler('click', null);
+    choice0.triggerEventHandler('click', null);
+    choice4.triggerEventHandler('click', null);
     fixture.detectChanges();
     expect(app.score).toEqual(0);
     expect(app.return).toEqual('KẾT THÚC');

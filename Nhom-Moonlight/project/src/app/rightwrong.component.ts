@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   </head>
   <body>
@@ -94,10 +95,12 @@ import { Component } from '@angular/core';
         </div>
         <div class="col-xs-3">
         </div>
-        <div class="col-md-12">
+        </div>
+      <div class="row">
+        <div class="col-md-12" style="padding-bottom: 55px">
         <a routerLink="/home" routerLinkActive="active" (click)="end()">Trang chủ</a>
         </div>
-	</div>
+        </div>
 </div>
 	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
   </body>
@@ -135,7 +138,7 @@ init():void {
 			break;
 			case 2:
 			num3 = num1 * num2 + error;
-			this.question = num1 + 'x' + num2 + '=' + num3;
+			this.question = num1 + ' x ' + num2 + ' = ' + num3;
 			break;
 			case 3:
 			num3 = num1 + error;
