@@ -4,11 +4,12 @@
 	1.Nguyễn Tiến Việt
 	2.Dương Xuân Đồng
 	3.Chung
-	4.Huy
+	4.Nguyễn Văn Huy
 	5.Mạnh
 ## Công nghệ làm dự án:
-	1.html/css
-	2.boostrap
+	1.angular 2
+	2.node js
+	3.mongodb
 ## dự án đã hoàn thành
 	Giao diện:
 		1.login
@@ -21,3 +22,5 @@
 	chức năng hiện người có nhiều bài viết được like nhiều nhất
 ## phi chức năng
 	giao diện thân thiện, dễ sử dụng
+## usecase
+	![usecase-instagram](https://github.com/nguyentienviet123456/INT2208-2-2017/blob/master/Nhom-K59/Manhinh%2BReadme/usecase-diagram.PNG)
