@@ -1,0 +1,24 @@
+Feature: Online Examination
+  As an end user
+  In order to do an online examination
+  I want to receive the result from the test
+
+  Scenario: Choose Subject
+    Given I am at the home page
+    When I click on "Thi truc tuyen"
+    Then I see a list of subjects
+    And I choose "Hoa hoc"
+    Then I see a list of online exams
+    When I click on "De thi so 1"
+    Then I see "De  thi so 1" exam
+
+  Scenario: Doing the Exam
+    Given I am at the "De thi so 1"
+    And I see 5 questions
+    Then I started with question 1
+    When I click on answer "A"
+    Then I see answer "A" is checked
+    When I click on answer "B" on the same question
+    Then I see the answer "A" is unchecked
+    When I click on "Nop bai" button
+    Then I see the result of the test
