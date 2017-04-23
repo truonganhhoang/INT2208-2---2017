@@ -22,6 +22,7 @@ import { PostComponent } from './post/post.component';
     PostComponent
   ],
   imports: [
+
     BrowserModule,
     FormsModule,
     HttpModule,
