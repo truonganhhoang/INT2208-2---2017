@@ -16,8 +16,8 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <!-- 1. Load libraries -->
-  <script src="level1.config.js"></script>
-  <script src="level1.function.js"></script>
+  <script src="level2.config.js"></script>
+  <script src="level2.function.js"></script>
   <!-- Polyfill for older browsers -->
   <script src="node_modules/core-js/client/shim.min.js"></script>
   <script src="node_modules/zone.js/dist/zone.js"></script>
@@ -25,6 +25,16 @@
   <script src="node_modules/systemjs/dist/system.src.js"></script>
   <!-- 2. Configure SystemJS -->
   <script src="systemjs.config.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97472165-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
   <script>
     System.import('app').catch(function(err){ console.error(err); });
   </script>
@@ -36,79 +46,81 @@
     li a:hover {
     background-color: #111;
     }
+
   </style>
 </head> 
 <body background="http://i.imgur.com/vERG8Wy.jpg">
-    <div class="col-md-4 col-md-offset-2">
-		   <div class="col-md-2 col-md-offset-1 ">
-		  <h3><font color="#004800" ><b>MÀN1<b></font></h3>
-		  </div>
-		  <div class="col-md-2 col-md-offset-1 ">
+  <div class="row" align = "center">
+		  <div class="col-md-2 col-md-offset-4">
           <h3><font color="#004800" ><span id="rank"></span></font></h3>
 		  </div>
-		   <div class="col-md-2 col-md-offset-1 ">
+		   <div class="col-md-1  ">
           <h3><font color="#004800" ><span class="glyphicon glyphicon glyphicon-ok-circle" aria-hidden="true" id="correct"></span><b></b></font></h3></a>
 		  </div>
-		   <div class="col-md-2 col-md-offset-1 ">
+		   <div class="col-md-1  ">
           <h3><font color="#990000" ><span class="glyphicon glyphicon glyphicon-remove-circle" aria-hidden="true" id="incorrect"></span><b></b></font></h3></a>
-          </div>
-    </div>
-	 <table align="center">
-     <tr>
-     <td height="120" width="120"></td>
-     </tr>
-    </table>
-	<div class="row">
-          <div class="col-md-4 col-md-offset-4">
-          <h2 style="font-family: 'Roboto Slab', serif ; color:#C00"><b>TRẢ LỜI CÂU HỎI BÊN DƯỚI</b> </h2>
-	      </div>
+          </div> 
 		   <div class="col-md-2 ">
-        
-		   <button type="button" class="button btn-danger btn-lg" onclick="render()">Câu tiếp </button> 
-	      </div>
-	</div>   
-  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-md-offset-3" style=" ">
-   <div class="row">
-    <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		   <h3 id="end" style="color:#006;"></h3>
+		   </div>
     </div>
-    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+	<table align="center">
+    <tr>
+   <td height="40" width="40"></td>
+    </tr>
+    </table>
+<div class="row" align = "center">
+	<div class="row" align = "center">  
+          <h1 style="font-family: 'Roboto Slab', serif ; color:#C00"><b>TRẢ LỜI CÂU HỎI BÊN DƯỚI</b> </h1>
+		      <div class="col-md-2 col-md-offset-5 ">
+	<b><p id="run"></p></b> 
+	</div>
+	</div>   
+   <div class="row">
 
+	<div class="col-md-6 col-md-offset-3">
      <h4 id="h-typeOfQuestions"></h4></font>
      <img id="anh" src="" alt="" >
+	</div>
+	<div align = "center">
+	<h1 style="font-family: 'Roboto Slab', serif; color:#C00; font-weight:bold  " id="h-questions" class="text-center" ></h1>
+	</div>
    </div>
- </div>
- <center><h1 style="font-family: 'Roboto Slab', serif; color:#C00; font-weight:bold  " id="h-questions" 
-  class="text-center" ></h1></center>
-  <br>
-  <div class="row">
-    <div class="col-md-2 col-md-offset-1 ">
-      <input type="checkbox" id="a" name="gender" value="drink" onclick="submitAnswer()">
-      <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="0"></label></h2>
-    </div>
-    <div class="col-md-2 col-md-offset-1 ">
-      <input type="checkbox" id="b" name="gender" value="drinks"  onclick="submitAnswer()">
-      <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="1"></label></h2>
-    </div>
-    <div class="col-md-2 col-md-offset-1 ">
-     <input  type="checkbox" id="c" name="gender" value="eat"     onclick="submitAnswer()">
-     <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="2"></label></h2>
-   </div>
-   <div class="col-md-2 col-md-offset-1 ">
-    <input  type="checkbox" id="d" name="gender" value="eats"    onclick="submitAnswer()">
-    <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="3"></label></h2>
-  </div> 
-</div>
     <table align="center">
-     <tr>
-     <td height="250" width="250"></td>
-     </tr>
+    <tr>
+   <td height="20" width="20"></td>
+    </tr>
     </table>
+  <div class="row" align = "center">
+    <div class="col-md-1 col-md-offset-4 ">
+	   <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="0"></label></h2>
+       <input type="checkbox" id="a" name="gender" value="a" onclick="submitAnswer()">
+    </div>
+    <div class="col-md-1  ">
+    <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="1"></label></h2>
+       <input type="checkbox" id="b" name="gender" value="b"  onclick="submitAnswer()">  
+    </div>
+    <div class="col-md-1  ">
+	 <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="2"></label></h2>
+     <input  type="checkbox" id="c" name="gender" value="c"     onclick="submitAnswer()">
+     
+    </div>
+   <div class="col-md-1  ">
+    <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="3"></label></h2>
+    <input  type="checkbox" id="d" name="gender" value="d"    onclick="submitAnswer()">
+   
+    </div> 
+	<div class="col-md-2 ">
+	<button type="button" class="button btn-danger btn-lg" onclick="render()">Câu tiếp </button> 
+	</div>
+		  
+  </div>
+ 
+</table>
+   
 </div>
-    <div class="col-md-5 col-md-offset-3">
-     <center><b>© Fallen Blossom Team - VNU University of Engineering and Technology</b></center>
-	 </div>
-    <b><p id="run"></p></b>
-    <h3 id="end" style="color: #F60;"></h3>
+    
+	 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -116,5 +128,8 @@
    <script>
   	render();
    </script>
+   <footer class="navbar-fixed-bottom navbar-center"> 
+		     <center><b>© 2017 - VNU University of Engineering and Technology</b></center>
+	</footer>>
 </body>
 </html>
