@@ -1,0 +1,20 @@
+#header {
+		background-color: #C93;
+		}
+	#question {
+		font-size: 400%;
+		}
+	#num0,#num1,#num2,#num3 {
+		font-size: 200%;
+		font-weight: bold;
+		background-color: #808080;
+		}
+	.row {
+		text-align:center;
+		}
+	#return {
+		font-weight: bold;
+		}
+    #play {
+      color : #0C0;
+    }

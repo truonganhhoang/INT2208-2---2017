@@ -1,0 +1,14 @@
+Feature: Manage-Profile
+		
+		As an user
+		I want to change my infomation
+		so i have to login
+
+Scenario: User want to change their infomation
+
+		Given: User is on Home Page
+		When: User click on profile symbol
+		And: After that click on text "change profile"
+		And: People enter what people want to change
+		And: After change completed, click "submit" button
+		Then: Message displayed Change Succesfully

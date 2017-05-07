@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <!-- Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	  <!-- Optional theme -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	  <!-- Latest compiled and minified JavaScript -->
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+ </head>
+ <style type="text/css" >
+	 body {
+             background: url("http://vigamusacademy.com/wp-content/uploads/2015/04/Slider-OD-background.png") fixed no-repeat border-box;
+         }
+         section {
+             padding-top: 70px;
+         }
+         footer {
+             display: block;
+             text-align: right;
+         }
+		 #custom-search-form {
+         	margin:0;
+         	margin-top: 5px;
+         	padding: 0;
+    	 }
+		.search-book {
+			align-items: center;
+		}
+     	#custom-search-form .search-query {
+        	padding-right: 3px;
+        	padding-right: 4px \9;
+        	padding-left: 3px;
+        	padding-left: 4px \9;
+            margin-bottom: 0;  		    
+        	border-radius: 3px;        	
+    		transition: width  0.2s ease-in-out;
+    	}
+     	#custom-search-form button {
+        	border: 0;
+        	background: none;        	
+        	padding: 2px 5px;
+        	margin-top: 2px;
+        	position: relative;
+        	left: -28px;        	
+        	margin-bottom: 0;
+        	-webkit-border-radius: 3px;
+        	-moz-border-radius: 3px;
+        	border-radius: 3px;
+    	}
+     	.search-query:focus + button {
+        	z-index: 3;   
+    	}   
+    	.search-query:focus{
+        	width: 260px;
+    	}   
+		.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }		
+		
+/* Global */
+		img { max-width:100%; }
+		a {transition: all 150ms ease;}
+		body{
+    		border-top:0;
+    		background:#FCDAD5 ;    
+		}
+		.thumbnails li> .fff .caption { 
+    		background:#fff !important; 
+    		padding:10px
+		}
+/* Page Header */
+		.page-header {
+    		background: #f9f9f9;
+    		margin: -30px -40px 40px;
+    		padding: 20px 40px;
+    		border-top: 4px solid #ccc;
+    		color: #999;
+    		text-transform: uppercase;
+		}    
+		.page-header h3 {
+    		line-height: 0.88rem;
+    		color: blue;
+		}
+		ul.thumbnails { margin-bottom: 0px;}
+/* Thumbnail Box */
+		.caption h4 {color: #444;}
+		.caption p {color: #999;}
+/* Carousel Control */
+		.control-box {
+    		text-align: right;
+    		width: 100%;
+		}
+		.carousel-control{
+    		background: #666;
+    		border: 0px;
+    		border-radius: 0px;
+    		display: inline-block;
+    		font-size: 34px;
+    		font-weight: 200;
+    		line-height: 18px;
+    		opacity: 0.5;
+    		padding: 4px 10px 0px;
+    		position: static;
+    		height: 30px;
+    		width: 15px;
+		}
+		.container{border: thick;
+		text-align: center;
+		}
+		.container h3{color: aqua;}
+/* Mobile Only */
+		@media (max-width: 767px) {
+    		.page-header, .control-box {text-align: center;} 
+		}
+		@media (max-width: 479px) {
+			.caption {word-break: break-all;}
+		}
+		li { list-style-type:none;}
+		.list-group-horizontal .list-group-item {display: inline-block;}
+		
+		.tien{border: 5px outset #665D5D;
+		border-width: 2px 1px 0px 1px;}
+		
+		/* Footer */
+#footer { 
+    height: auto; 
+
+}
+
+body{
+    margin-top:20px
+}
+
+.fa{
+    font-size:24px;
+    margin-right:5px
+}
+
+.row-first{
+    margin-bottom:10px;
+    margin-top:8px
+}
+.title-footer{
+    margin-top:32px;
+}
+
+a {
+    transition:all .3s ease;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -o-transition:all .3s ease
+}
+
+.main-footer{
+    color:#fff;
+    background-color:#000;
+    text-align:center;
+}
+
+.contact a{
+    display:block;
+    background-color:#292b34;
+    font-size:20px;
+    text-align:center;
+    color:#fff;
+    padding:7px;
+}
+
+.contact a:hover{
+    background-color:rgba(255,255,255,0.85);
+    text-decoration:none
+}
+
+.contact a.skype:hover,.fa-skype{
+    color:#00aff0;
+}
+
+.contact a.google:hover,.fa-instagram{
+    color:#dd4b39;
+}
+
+.contact a.linkedin:hover,.fa-facebook{
+    color:#0e76a8;
+}
+
+.contact a.twitter:hover,.fa-twitter{
+    color:#00acee;
+	
+}
+	</style>
+ <body>
+     <!-- header -->
+     <!-- thêm thư viện jquery-->
+     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+     
+     <header>         
+               <div class="container-fluid">   
+    <nav class="navbar navbar-default">
+      <div class="container">        
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thư viện sách</a></li>
+            <li><a href="#">Tìm kiếm sách</a></li>
+            <li><a href="#">Thông tin sách</a></li>
+            <li><a href="#">Sách mới</a></li>
+            
+            <li>
+              <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="https://vi-vn.facebook.com/login/" aria-expanded="true" aria-controls="nav-collapse1">Đăng nhập</a>
+              
+            </li>
+            <li>
+              <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="true" aria-controls="nav-collapse1">Đăng kí</a>
+              
+            </li>
+          </ul>
+          
+             <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-book" aria-hidden="true" ></span> Library Online</a>
+                     
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+             </div>
+     </header>
+ <section id="myScroll">
+             <div class="container">
+				 <h1 class="search-book">Tìm kiếm sách</h1>        
+             <div class="container">
+	<div class="row">    
+        <div class="span12">
+            <form id="custom-search-form" class="form-search form-horizontal center-block">
+                <div class="timkiemsach span12">
+                    <input type="text" class="search-query mac-style" placeholder="Nhập tên">
+                    <button type="submit" class="btn"><i class="icon-search"></i><a href="#" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> </a></button>
+                    <div class="container">
+                    <h2>Kết quả tìm kiếm:</h2> 
+                     <p>"tuan"</p>
+        
+            <div class="list-group list-group-horizontal"><h3>Tìm kiếm theo :</h3>
+                <a href="#" class="list-group-item">Thể loại</a> 
+                <a href="#" class="list-group-item active">Tác giả</a>
+                <a href="#" class="list-group-item">Đọc nhiều</a>
+                <a href="#" class="list-group-item">Nhà xuất bản</a>
+                         
+            </div>
+                    
+	
+</div>
+                </div>
+            </form>
+        </div>
+        
+        
+        <div class="tien">
+       
+		
+	</div>
+</div> 			
+  			</div>
+  			<div class="container">
+<div class="col-xs-12">    
+ </div>
+        
+    <div class="carousel slide" id="myCarousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">
+    						<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://sáchkỹnăngmềm.vn/wp-content/uploads/2015/09/156412_p29988m30159.jpg" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Đắc nhân tâm</h4>
+									<p>Sách kĩ năng</p>
+									<a class="btn btn-mini" href="#">» Đọc thêm</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://cdn-img-v1.webbnc.net/upload/web/51/510151/product/2015/01/23/10/35/142198415535.jpg_resize400x400.jpg" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Marketing</h4>
+									<p>Sách kinh tế</p>
+									<a class="btn btn-mini" href="#">»  Đọc thêm</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://nhasachviet.vn//media/images/sach/File-anh-2015/tony-buoi-sang-tren-duong-bang.jpg" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Trên đường băng</h4>
+									<p>Sách kĩ năng</p>
+									<a class="btn btn-mini" href="#">»  Đọc thêm</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="https://lh3.googleusercontent.com/-cOQk-r3x60w/VMhjEM0A8xI/AAAAAAAARBs/TmNd0tTd9Sw/w340-h509-no/Giao%2Btrinh%2Bmang%2BPC.png" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Mạng máy tính</h4>
+									<p>Sách Công nghệ</p>
+									<a class="btn btn-mini" href="#">»  Đọc thêm</a>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+          </div><!-- /Slide1 --> 
+		</div>
+   <head>
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+<body><!--end #footer-->
+    <!-- Sticky Footer -->
+    <script type="text/javascript" src="js/footer.js"></script>
+    <!-- Fade Contact Footer -->
+ <script type="text/javascript" src="js/contactFade.js"></script>
+</body>
+	   <nav>
+			<ul class="control-box pager">
+				<li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+				<li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+			</ul>
+		</nav>
+	   <!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel -->
+        
+</div><!-- /.col-xs-12 -->          
+
+</div><!-- /.container -->
+ </section>
+ <head>
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="
+    lo.css">
+</head>
+<body>
+
+        <section id="footer" style="background-color:ghostwhite;">
+        <div class="container">
+    		<center style="color:#fff;">
+    		<div class="container">
+    		    <div class="well well-sm main-footer"  style="background-color: ghostwhite; border:0px">
+    		        <div class="row">
+    		            <div class="col-md-12">
+    		                <div class="row">
+    		                    <div class="col-md-4">
+    		                        <h1 class="title-footer">
+    		                            Online Library</h1>
+    		                    </div><!--end .col-md-4-->
+    		                    <div class="col-md-4 contact-email">
+    		                        <h2>
+    		                            <a href="mailto:viettienn97@gmai.com">viettienn97@gmail.com</a></h2>
+    		                        <h3>
+    		                            Say is not enough </h3>
+    		                    </div><!--end .col-md-4 .contact-email-->
+    		                    <div class="col-md-4">
+    		                        <div class="row contact row-first">
+    		                            <div class="col-md-6">
+    		                                <a href="skype:nico.plyley?chat" class="skype"><i class="fa fa-skype"></i>Phung.tien</a>
+    		                            </div><!--end .col-md-6-->
+    		                            <div class="col-md-6">
+    		                                <a href="http://instagram.com/nicoplyley" class="instagram"><i class="fa fa-instagram"></i>@tienphung</a>
+    		                            </div><!--end .col-md-6-->
+    		                        </div><!--end .row .contact .row-first-->
+    		                        <div class="row contact">
+    		                            <div class="col-md-6">
+    		                                <a href="http://facebook.com/nicoplyley" class="facebook"><i class="fa fa-facebook"></i>phung.tien</a>
+    		                            </div><!--end .col-md-6-->
+    		                            <div class="col-md-6">
+    		                                <a href="http://twitter.com/nicoplyley" class="twitter"><i class="fa fa-twitter"></i>@tienphung</a>
+    		                            </div><!--end .col-md-6-->
+    		                        </div><!--end .row .contact-->
+    		                    </div><!--end .col-md-6-->
+    		                </div><!--end .row-->
+    		            </div><!--end .col-md-12-->
+    		        </div><!--end .row-->
+    		    </div><!--end .well .well-sm .main-footer-->
+    		</div><!--end .container-->
+    		</center>
+    	</div><!--end .container-->
+    </section><!--end #footer-->
+    <!-- Sticky Footer -->
+    <script type="text/javascript" src="js/footer.js"></script>
+    <!-- Fade Contact Footer -->
+	 </body>
+  
+	</body>    </html> 

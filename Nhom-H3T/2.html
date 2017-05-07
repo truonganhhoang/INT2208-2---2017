@@ -19,13 +19,22 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style type="text/css">
+        body {
+            background: url("http://i.imgur.com/Nczsmy9.jpg") fixed no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        section {
+            padding-top: 70px;
+        }
+
         footer {
             text-align: right;
         }
     </style>
 </head>
 
-<body background="http://i.imgur.com/Nczsmy9.jpg">
+<body>
     <!-- header -->
     <!-- thêm thư viện jquery-->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
@@ -45,7 +54,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Online Math</a>
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Panda Online</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,13 +75,14 @@
             </div>
         </nav>
     </header>
+
     <!-- chon mon + chuong -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
                     <h1><strong>TOÁN</strong></h1>
-                    <div class="btn-group-vertical" style="font-family: serif; font-style: italic">
+                    <div class="btn-group-vertical">
 
                         <button type="button" onclick="location.href='file:///media/hangtran/MY%20DATA/btl/chap1Math.html'" class="btn btn-link">Chương 1: </button>
                         <button type="button" onclick="location.href='#'" class="btn btn-link">Chuong 2: </button>
@@ -85,7 +95,7 @@
 
                 <div class="col-sm-4">
                     <h1><strong> TIẾNG VIỆT</strong></h1>
-                    <div class="btn-group-vertical" style="font-family: serif; font-style:italic">
+                    <div class="btn-group-vertical">
                         <button type="button" onclick="location.href='#'" class="btn btn-link">Đề 1</button>
                         <button type="button" onclick="location.href='#'" class="btn btn-link">Đề 2</button>
                         <button type="button" onclick="location.href='#'" class="btn btn-link">Đề 3</button>
@@ -97,7 +107,7 @@
 
                 <div class="col-sm-4">
                     <h1><strong>TIẾNG ANH</strong> </h1>
-                    <div class="btn-group-vertical" style="font-family: serif; font-style:italic">
+                    <div class="btn-group-vertical">
                         <button type="button" onclick="location.href='#'" class="btn btn-link">Đề 1</button>
                         <button type="button" onclick="location.href='#'" class="btn btn-link">Đề 2</button>
                         <button type="button" onclick="location.href='#'" class="btn btn-link">Đề 3</button>
@@ -112,11 +122,11 @@
         </div>
     </section>
     <!-- tao footer -->
-    <footer class="navbar-fixed-bottom">
+   <!-- <footer class="navbar-fixed-bottom">
 
         © 2017 - VNU University of Engineering and Technology
 
-    </footer>
+    </footer>-->
 
 </body>
 

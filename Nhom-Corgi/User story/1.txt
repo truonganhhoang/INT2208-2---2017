@@ -1,0 +1,20 @@
+Feature: User login on site
+  As an end user
+  I want to login with my username/password
+  So that I can access the website
+
+  Scenario: User login are correct
+    Given a user "Elvin" with password "abc"
+    And I am on the login page
+    When I fill in "User name" with "Elvin"
+    And I fill in "Password" with "abc"
+    And I click on "Login" button
+    Then I should see home page
+
+  Scenario: User login are incorrect
+    Given a user "Elvin" with password "abc"
+    And I am on the login page
+    When I fill in "User name" with "Elvin"
+    And I fill in "Password" with "xyz"
+    And I click on "Login" button
+    Then I should see an error message "Username or password is incorrect"

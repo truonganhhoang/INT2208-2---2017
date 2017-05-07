@@ -1,62 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Calculator</title>
-    <link href="CalculatorCSS.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-    <div id="container">
-        <h1>Calculator</h1>
-        <div id="result"></div>
-        <div id="main">
-            <div class="firstRow">
-                <button id="bt_power2" class="bt_power">x^2</button>
-                <button id="bt_power3" class="bt_power">x^3</button>
-                <button id="bt_power" class="bt_power">y^x</button>
-                <button id="bt_openBrackets">(</button>
-                <button id="bt_closeBrackets">)</button>
-                <button id="bt_delete">Del</button>
-                <button id="bt_reset">AC</button>
-            </div>
-            <div class="rows">
-                <button id="bt_factorial">x!</button>
-                <button id="bt_logarithm">log</button>
-                <button id="bt_squareRoot">√x</button>
-                <button value="7" class="bt_number">7</button>
-                <button value="8" class="bt_number">8</button>
-                <button value="9" class="bt_number">9</button>
-                <button value="+" class="bt_opera">+</button>
-            </div>
-            <div class="rows">
-                <button id="bt_sin" class="bt_trigonometry">sin</button>
-                <button id="bt_tag" class="bt_trigonometry">tan</button>
-                <button id="bt_cos" class="bt_trigonometry">cos</button>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                <button value="4" class="bt_number">4</button>
-                <button value="5" class="bt_number">5</button>
-                <button value="6" class="bt_number">6</button>
-                <button value="-" class="bt_opera">-</button>
-            </div>
-            <div class="rows">
-                <button id="bt_cosh" class="bt_trigonometry">cosh</button>
-                <button id="bt_sinh" class="bt_trigonometry">sinh</button>
-                <button id="bt_tanh" class="bt_trigonometry">tanh</button>
-                <button value="1" class="bt_number">1</button>
-                <button value="2" class="bt_number">2</button>
-                <button value="3" class="bt_number">3</button>
-                <button value="*" class="bt_opera">*</button>
-            </div>
+    <title>MiniGameDemo</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+<style type="text/css">		
+	@media all and (min-width: 320px) {
+	#header {
+		background-color: #F93;
+		}
+	#score {
+		font-size:150%;
+		}
+	#question {
+	font-size:450%;
+	color: #000;
+	}
+	#right {
+		color: #0C0;
+	}
+	#wrong {
+		color: #F00;
+		}
+	#return {
+		color: #000;
+		font-weight: bold;
+		}
+	.row {
+		text-align:center;
+		}	
+}
+</style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">		
+		<div class="col-md-12" id="header">
+			<h3>Right or Wrong <span class="label label-default">MiniGame</span></h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+					<h6>Chọn đúng hoặc sai !</h6>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progress">
+  <div class="progress-bar" id="timer-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" >
+    
+  </div>
+</div>
+				</div>
+			</div>
+			<div class="row">
+            	<div class="col-md-12" >
+					<p id="score">Score: 0</p>
+				</div>
+				<div class="col-md-12" >
+					<p id="question"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+				</div>
+				<div class="col-xs-2">
+					 
+					<button type="button" class="btn btn-default" id="right">
+						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="col-xs-2">
+					 
+					<button type="button" class="btn btn-default" id="wrong">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+				<div class="col-xs-4">
+				</div>
+			</div>
             <div class="row">
-                <button id="bt_pi">π</button>
-                <button id="bt_random">Rand</button>
-                <button value="." classs="bt_point">.</button>
-                <button value="0" class="bt_number">0</button>
-                <button value="=" class="bt_answer">=</button>
-                <button value="%" class="bt_opera">%</button>
-                <button value="/" class="bt_opera">/</button>
-            </div>
+                <div class="col-md-12">
+                <p id="return"> Go!Go!Go! </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+        <button type="button" class="btn btn-default" id="retry">
+						<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+					</button>		
         </div>
-    </div>
-</body>
+        <div class="col-md-12">
+        <a href="homepage.html">&lt;&lt;Trở về trang chủ</a>		
+        </div>
+	</div>
+</div>
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src='js/rightwrong.js'></script>
+  </body>
 </html>

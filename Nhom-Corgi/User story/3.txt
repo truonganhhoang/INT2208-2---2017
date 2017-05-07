@@ -1,0 +1,23 @@
+Feature:  Examination
+  In order to do an examination
+  As an end user
+  I want to see and download the exam
+
+  Scenario: Choose exam
+    Given I am at the home page
+    When I click on "De thi"
+    Then I see a list of subjects
+    And I choose "Hoc hoc"
+    Then I see a list of "Hoa hoc" exams
+
+  Scenario: See the exam
+    Given I am at the "Hoa hoc" exams page
+    And I choose "De thi THPT Quoc gia mon Hoa hoc nam 2015" exam
+    When I click on "Xem de thi" button
+    Then I see "De thi THPT Quoc gia mon Hoa hoc nam 2015" exam
+
+  Scenario: Download the exam
+    Given I am at the "Hoa hoc" exams page
+    And I choose "De thi THPT Quoc gia mon Hoa hoc nam 2015" exam
+    When I click on "Tai de thi" button
+    Then I start download "De thi THPT Quoc gia mon Hoa hoc nam 2015" exam

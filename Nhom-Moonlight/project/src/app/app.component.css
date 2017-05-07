@@ -1,0 +1,27 @@
+	@media all and (min-width: 320px) {
+  .container-fluid {
+    min-height: 100%;
+    position: relative;
+  }
+	#header {
+		background-color:#090;
+		color: #FFF;
+		}
+	h3 {
+		color: #FFF;
+		}
+    #footer {
+    background-color: #090;
+    color: #FFF;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    }
+	.thumbnail {
+		background-color: #CCC;
+	}
+	body {
+		background-color: #CCC;
+		}
+}

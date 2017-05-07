@@ -5,241 +5,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Video Bài giảng | Ruadihoc</title>
+    <title>Công suất điện xoay chiều - Video | Rùa - Team</title>
 
     <meta name="description" content="Source code generated using layoutit.com">
     <meta name="author" content="LayoutIt!">
-	
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script>
+          // This is called with the results from from FB.getLoginStatus().
+          function statusChangeCallback(response) {
+              console.log('statusChangeCallback');
+              console.log(response);
+              // The response object is returned with a status field that lets the
+              // app know the current login status of the person.
+              // Full docs on the response object can be found in the documentation
+              // for FB.getLoginStatus().
+              if (response.status === 'connected') {
+                  // Logged into your app and Facebook.
+                  testAPI();
+              } else {
+                  // The person is not logged into your app or we are unable to tell.
+                  document.getElementById('status').innerHTML = 'Please log ' +
+                      'into this app.';
+              }
+          }
+
+          // This function is called when someone finishes with the Login
+          // Button.  See the onlogin handler attached to it in the sample
+          // code below.
+          function checkLoginState() {
+              FB.getLoginStatus(function(response) {
+                  statusChangeCallback(response);
+              });
+          }
+
+          window.fbAsyncInit = function() {
+              FB.init({
+                  appId      : '1469120176465549',
+                  cookie     : true,  // enable cookies to allow the server to access
+                                      // the session
+                  xfbml      : true,  // parse social plugins on this page
+                  version    : 'v2.8' // use graph api version 2.8
+              });
+
+              // Now that we've initialized the JavaScript SDK, we call
+              // FB.getLoginStatus().  This function gets the state of the
+              // person visiting this page and can return one of three states to
+              // the callback you provide.  They can be:
+              //
+              // 1. Logged into your app ('connected')
+              // 2. Logged into Facebook, but not your app ('not_authorized')
+              // 3. Not logged into Facebook and can't tell if they are logged into
+              //    your app or not.
+              //
+              // These three cases are handled in the callback function.
+
+              FB.getLoginStatus(function(response) {
+                  statusChangeCallback(response);
+              });
+
+          };
+
+          // Load the SDK asynchronously
+          (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js";
+              fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+
+          // Here we run a very simple test of the Graph API after login is
+          // successful.  See statusChangeCallback() for when this call is made.
+          function testAPI() {
+              console.log('Welcome!  Fetching your information.... ');
+              FB.api('/me', function(response) {
+                  console.log('Successful login for: ' + response.name);
+                  document.getElementById('status').innerHTML =
+                      'Thanks for logging in, ' + response.name + '!';
+              });
+          }
+	  </script>
   </head>
   <body>
-
-  
+  <!-- su dung SDK facebook -->
+  <div id="fb-root"></div>
     <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-				<div class="navbar-header">
-					 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="#">Trang chủ</a>
-				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="#">Tin tức</a>
-						</li>
-						<li>
-							<a href="#">Mới phát hành</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Thư viện đề thi<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Toán</a>
-								</li>
-								<li>
-									<a href="#">Văn</a>
-								</li>
-								<li>
-									<a href="#">Anh</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">Separated link</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">One more separated link</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control">
-						</div> 
-						<button type="submit" class="btn btn-default">
-							Search
-						</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#">Giới thiệu</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liên hệ<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">+84969696969</a>
-								</li>
-								<li>
-									<a href="#">ruadihoc@gmail.com</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				
-			</nav>
+		<div class="header">
 			<div class="row">
-				<div class="col-md-4">
-					<img alt="Bootstrap Image Preview" src="http://www.upsieutoc.com/image/YlJEY0" class="img-circle">
-				</div>
-				<div class="col-md-4">
-					<h3>
-						h3. Lorem ipsum dolor sit amet.
-					</h3>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-6">
-							 
-							<button type="button" class="btn btn-default">
-								Default
-							</button>
-						</div>
-						<div class="col-md-6">
-							 
-							<button type="button" class="btn btn-default">
-								Default
-							</button>
-						</div>
+			<div class="col-md-12">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation" aria-expanded="false">
+					<div class="navbar-header">
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<div class="logo pull-left">
+								<a href="1.html"><img src="http://imageshack.com/a/img923/2174/NJezLZ.png" alt="logo_team" height="45" width="45"/></a>
+							</div>
+					    </a>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="header_middle">
-			<div class="container">
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="4.html">Phòng học</a>
+							</li>
+							<li>
+								<a href="2.html">Phòng thi</a>
+							</li>
+						</ul>
+						<!--<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control">
+							</div>
+							<button type="submit" class="btn btn-default">
+								Search
+							</button>
+						</form>-->
+						<ul class="nav navbar-nav navbar-right">
+							<li> <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"
+												  data-auto-logout-link="true">
+							</fb:login-button>
+								<div id="status">
+								</div></li>
+							<li>
+								<a href="https://www.facebook.com/profile.php?id=1664158677218494&ref=ts&fref=ts">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/profile.php?id=1664158677218494&ref=ts&fref=ts">Liên Hệ</a>
+							</li>
+						</ul>
+					</div>
+
+				</nav>
 				<div class="row">
-					<!-- tao logo ben trai -->
-					<div class="col-sm-2">
-						<div class="logo pull-left">
-							<a href="index.html"><img src="http://imageshack.com/a/img923/2174/NJezLZ.png" alt="logo_team" height="80" width="80"/></a>
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-								<li><a href="#"> Đăng nhập</a></li>
-								<li><a href="#">Đăng kí </a></li>
-								<li><a href="2.html">Thi online </a></li>
-								<li><a href="3.html">Bài giảng </a></li>
-								<li><a href="4.html">Đấu trường</a></li>
-								<li><a href="#">Cộng đồng</a></li>
-								<li><a href="#">Tài khoản</a></li>
-							</ul>
-						</div>
+					<div class="col-md-4">
+						<img alt="Bootstrap Image Preview" src="http://www.upsieutoc.com/image/YlJEY0" class="img-circle">
 					</div>
 				</div>
 			</div>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-	<hr>
-	<div style="margin: 20px 10px; border-width: 1px; border-color: #D3D3D3	">
-		<div class="col-md-2" style="border: solid 1px #D3D3D3; height: 300px; overflow: auto; background-color: #F5F5F5">
-			<h3>
+		<br>
+				<div class="row">
+					<div class="col-sm-2">
+						<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2">Tin tức : Tuyển sinh đại học năm 2017 Đại học Công Nghệ</marquee>
+					</div>
+				</div>
+	
+		<div class="col-md-12">
+			<h3 class="text-justified">
 				Nội dung bài học
 			</h3>
-			<ol>
-				<li>
-					<a href="#">Công suất điện xoay chiều</a>
-				</li>
-			</ol>
+			<select>
+				<option value="content" src="3.html">Công suất điện xoay chiều</option>
+			</select>
+			<br>
+			<br>
 		</div>
-		<div class="col-md-6">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/UT4EdC1i49A" frameborder="0" allowfullscreen></iframe>
+		<div class="col-md-8 col-xs-12">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UT4EdC1i49A" allowfullscreen></iframe>
+			</div>
 		</div>
-		<div class="col-md-4">
-				<div id="gb">
-					<div class="gbtab" onclick="showHideGB()"> </div>
-						<div class="gbcontent">
-							<!-- BEGIN CBOX - www.cbox.ws - v001 -->
-							<div id="cboxdiv" style="text-align: right; line-height: 0; background: 94AAD6">
-								<div><iframe frameborder="0" width="360" height="500" src="http://www7.cbox.ws/box/?boxid=461741&boxtag=j5eqse&sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain7-461741" style="border:#426EB4 1px solid;" id="cboxmain7-461741"></iframe></div>
-								<div><iframe frameborder="0"  width="360" height="80" src="http://www7.cbox.ws/box/?boxid=461741&boxtag=j5eqse&sec=form" marginheight="4" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform7-461741" style="border:#426EB4 1px solid;border-top:10px" id="cboxform7-461741"></iframe></div>
-							</div>
-							<!-- END CBOX -->
-							<div style="text-align:right">
-								<a href="javascript:showHideGB()">
-								</a>
-							</div>
-					</div>
-				</div>
-
-				<script type="text/javascript">
-				var gb = document.getElementById("gb");
-				gb.style.right = (30-gb.offsetWidth).toString() + "px";
-				</script>
+		<div class="col-md-4 col-xs-12">
+			<div class="text-center">
+				<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+					 data-numposts="2"></div>
+			</div>
 		</div>
-	</div>
+		<hr>
 	</div>
 	<hr>
-</div>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
-  <footer id="footer" style="border: solid 1px #D3D3D3; background-color: #96c11f"><!--Footer-->
-	  <div class="footer-top">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-sm-2">
-					  <div class="companyinfo">
-						  <h2><span>Rùa</span> đi học</h2>
-						  <p>Website học tập trực tuyến chậm mà chắc</p>
-					  </div>
-				  </div>
-				  <div class="col-sm-3">
-					  <div class="single-widget">
-						  <h2>Dịch vụ</h2>
-						  <ul class="nav nav-pills nav-stacked">
-							  <li><a href="#">Hỗ trợ online</a></li>
-							  <li><a href="#">Liên hệ với chúng tôi</a></li>
-							  <li><a href="#">Góp ý,phản hồi</a></li>
-						  </ul>
-					  </div>
-				  </div>
-				  <div class="col-sm-3">
-					  <div class="single-widget">
-						  <h2>Rùa đi học</h2>
-						  <ul class="nav nav-pills nav-stacked">
-							  <li><a href="#">Giáo viên nổi tiếng</a></li>
-							  <li><a href="#">Học sinh tiêu biểu </a></li>
-							  <li><a href="#">Giới thiệu</a></li>
-						  </ul>
-					  </div>
-				  </div>
-				  <div class="col-sm-3 col-sm-offset-1">
-					  <div class="single-widget">
-						  <h2>Nhận thông tin mới nhât</h2>
-						  <form action="#" class="searchform">
-							  <input type="text" placeholder="Nhập địa chỉ email của bạn" />
-							  <button type="submit" class="btn btn-default">Submit<i class="fa fa-arrow-circle-o-right"></i></button>
-							  <p>Bạn sẽ nhận được thông tin về những sản phẩm mới,hot nhất <br />Những khuyến mại từ shop nhanh nhất</p>
-						  </form>
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-	  </div>
-	  <div class="footer-bottom">
-		  <div class="container">
-			  <div class="row">
-				  <p class="pull-left">Copyright © 2017 Rùa đi học Inc. All rights reserved.</p>
-				  <p class="pull-right">Designed by <span><a target="_blank" href="http://www.facebook.com/traitimbenphai53">Con rùa-team</a></span></p>
-			  </div>
-		  </div>
-	  </div>
-  </footer><!--/Footer-->
+  <footer>
+		<a class="text-muted" href="https://www.facebook.com/profile.php?id=1664158677218494&ref=ts&fref=ts">
+			<p class="text-center">Rùa Team &copy; 2017</p>
+		</a>
+	</footer>
 </html>
