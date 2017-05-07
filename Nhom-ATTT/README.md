@@ -1,19 +1,18 @@
-﻿Nhóm ATTT: Nguyễn Anh Tuấn, Phạm Đức Anh, Lê Việt Thắng, Phùng Việt Tiến
+Nhóm ATTT: Nguyễn Anh Tuấn, Phạm Đức Anh, Lê Việt Thắng, Phùng Việt Tiến
 # Bt Nhóm: Website Online Library (Ứng dụng wattpat - https://play.google.com/store/apps/details?id=wp.wattpad)
- - website để mọi người có thể đọc sách online mọi lúc, mọi nơi. Lưu trữ, đánh dấu những cuốn sách đã đọc và muốn đọc, vị trí cuốn sách đang đọc
+ - website để mọi ng có thể đọc sách online mọi lúc, mọi nơi. Lưu trữ, đánh dấu những cuốn sách đã đọc và muốn đọc, vị trí cuốn sách đang đọc
 
-
-# Home
--Header:
+<!-- Home -->
+# Header:
  Đăng nhập - Đăng ký
  Nav: Search - Menu (Trang chủ - Thư viện - Tủ sách cá nhân)
 
--Contenner:
+# Contenner:
  Chuyên mục sách: Toán học, tin học, vật lý, truyện, ...
- Sách mới thêm (Những sách mới thêm gần đây)
+ Cập nhật mới (Những sách mới thêm gần đây)
  Sách hay nên đọc (Gợi ý sách đọc)
 
--Footer:
+# Footer:
  liên hệ (Bình luận, gợi ý, đóng góp ý kiến với người phát triển)
  Chia sẻ: Facebool, G+, twitter
 <!-- Home -->
@@ -24,7 +23,6 @@
 -Button Đăng nhập
 -Button Đăng ký
 <!-- Log in -->
-
 
 # Read-
 -Bookname
