@@ -3,7 +3,18 @@ var correct = 0;
 var incorrect = 0;
 function render(){
 	if(count == (questions.length -1) ){
-		document.getElementById("end").innerHTML= "Qua màn";
+		 if(correct==4)
+		{
+			document.getElementById("end").innerHTML = "<a href='./5.3.html'>Qua màn</a>";
+			document.getElementById("end").style.fontFamily = "Roboto Slab,sans-serif";
+			
+		}
+		else {
+		document.getElementById("end").innerHTML= "<a href='./5.2.html'>Chơi lại</a>";
+		document.getElementById("end").style.fontFamily = "Roboto Slab,sans-serif";
+		
+		}
+		return true;
 		return true;
 	}
 
@@ -43,18 +54,18 @@ function render(){
 }
 
 function submitAnswer(){
-	var c;
-	useranswers = document.getElementsByName("gender");
-	//
+	var ans;
+	useranswers = document.getElementsByName("pop");
+
 	for(var i =0;i< useranswers.length; i++){
 		if(useranswers[i].checked){
-			c = useranswers[i].value;
+			ans = useranswers[i].value;
 		} else {
 			useranswers[i].disabled = true;
 		}
 	}
-		//kiem tra ket qua cua cau tr loi
-		if(c == answers[count]){
+		
+		if(ans == answers[count]){
 			console.log("helpp");document.getElementById("run").innerHTML = "Chính Xác!";
 			document.getElementById("run").style.color = "green";
 			document.getElementById("run").style.fontSize= "xx-large";
