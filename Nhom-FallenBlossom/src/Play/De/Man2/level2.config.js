@@ -39,7 +39,7 @@ choices[3][0] = "25";
 choices[3][1] = "26";
 choices[3][2] = "29";
 choices[3][3] = "30";
-answers[3] = choices[3][2];
+answers[3] = choices[3][3];
 
 questions[4] = "8 + 12 :4";
 typeOfQuestions[4] = "";

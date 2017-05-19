@@ -26,10 +26,10 @@ answers[1] = choices[1][1];
 questions[2] = "15 + 19 + 27 +13 = ??"
 typeOfQuestions[2] = "";
 choices[2] = new Array();
-choices[2][0] = "86";
-choices[2][1] = "85";
-choices[2][2] = "84";
-choices[2][3] = "83";
+choices[2][0] = "76";
+choices[2][1] = "75";
+choices[2][2] = "74";
+choices[2][3] = "73";
 answers[2] = choices[2][2];
 
 questions[3] = "5 x 13 + 6 x 10 = ?"

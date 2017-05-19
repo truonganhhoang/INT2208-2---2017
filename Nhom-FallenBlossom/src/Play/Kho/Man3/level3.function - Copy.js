@@ -3,19 +3,18 @@ var correct = 0;
 var incorrect = 0;
 function render(){
 	if(count == (questions.length -1) ){
-		 if(correct >=4)
+		 if(correct>=4)
 		{
-			document.getElementById("end").innerHTML = "<a href='../Man3/5.3.html'>Qua màn</a>";
+			document.getElementById("end").innerHTML = "<a href='../Man4/5.4.html'><b>Qua màn</b></a>";
 			document.getElementById("end").style.fontFamily = "Roboto Slab,sans-serif";
 			
 		}
 		else {
-		document.getElementById("end").innerHTML= "<a href='./5.2.html'>Chơi lại</a>";
+		document.getElementById("end").innerHTML= "<a href='./5.3.html'><b>Chơi lại</b></a>";
 		document.getElementById("end").style.fontFamily = "Roboto Slab,sans-serif";
-		
 		}
 		return true;
-		return true;
+		
 	}
 
 	count++;
@@ -56,7 +55,7 @@ function render(){
 function submitAnswer(){
 	var ans;
 	useranswers = document.getElementsByName("pop");
-
+	
 	for(var i =0;i< useranswers.length; i++){
 		if(useranswers[i].checked){
 			ans = useranswers[i].value;
@@ -83,8 +82,6 @@ function submitAnswer(){
 			incorrect = incorrect + 1;
 			document.getElementById("incorrect").innerHTML = incorrect;
 		}
+	  
 }
-
-
-var count1 =0;
 
