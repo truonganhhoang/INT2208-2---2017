@@ -1,0 +1,33 @@
+#header {
+		background-color: #3F3;
+		}
+	#num0,#num1,#num2,#num3,#num4,#num5,#num6,#num7,#num8 {
+		font-size: 300%;
+		font-weight: bold;}
+	.row {
+		text-align:center;
+		}
+	#score {
+		font-size:100%;
+		}
+  #play {
+    color: #0C0;
+  }
+	#return {
+    padding-top: 5px;
+		font-weight: bold;
+		}
+	#question {
+	font-size:350%;
+	color: #000;
+	}
+	@media all and (max-width: 480px) {
+	#num0,#num1,#num2,#num3,#num4,#num5,#num6,#num7,#num8 {
+		font-size: 50%;
+		font-weight: bold;
+		}
+	#question {
+		font-size:200%;
+		color: #000;
+	}
+   }

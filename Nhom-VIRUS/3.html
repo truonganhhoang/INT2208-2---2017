@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+	<meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+	<style>
+		body {
+			padding:50px 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class "container">
+		<div class "row">
+			<div class = "col-md-5">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
+			      <div class="container">
+			        <div class="navbar-header">
+			          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          <a class="navbar-brand" href="#">LOL QUESTION</a>
+			        </div>
+			        <div id="navbar" class="collapse navbar-collapse">
+			          <ul class="nav navbar-nav">
+			            <li > <a href="#">Đăng Nhập</a></li>
+						<li class= "active"><a href="#">Câu Hỏi</a></li>
+						<li ><a href="#">Truyền Thuyết</a></li>
+			          </ul>
+			        </div>
+			      </div>
+    </nav>
+			</div>
+		</div>
+					
+		</div>
+			
+		<h1>CÁC CÂU HỎI VỀ TƯỚNG</h1>
+		<div class="row">
+				<div class="col-md-12">
+					<h4>
+						Chọn câu trả lời đúng!
+					</h4>
+				</div>
+			</div>
+		 <div class="container">
+		      <div class="row">
+				<div class="col-xs-6" id="score">
+					<h3>
+					Điểm: {{score}}
+					</h3>
+				</div>
+			</div>
+		        <h3>{question}:</h3>
+		<h1></h1>
+		<div class="radio">
+		  <h4><label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+		    {Câu trả lời 1}
+		  </label></h4>
+		  <h4><label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+		   {Câu trả lời 2}
+		  </label></h4>
+		  <h4><label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
+		    {Câu trả lời 3}
+		  </label></h4>		  
+		  </div>
+		  <div class="col-sm-offset-0 col-sm-3">
+				  <button type="submit" class="btn btn-default">NEXT</button>
+			</div>
+	</div>
+</body>	
+</html>

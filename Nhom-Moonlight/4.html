@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MiniGameDemo</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+<style type="text/css">
+	#header {
+		background-color: #CC0;
+		}
+	.row {
+		text-align:center;
+		}
+	#score {
+		font-size:150%;
+		}
+	#add {
+		font-size: 200%;
+		font-weight: bold;
+		color: #0F0;
+		}
+	#sub {
+		font-size: 200%;
+		font-weight: bold;
+		color: #F00;
+		}
+	#mul {
+		font-size: 200%;
+		font-weight: bold;
+		color: #06C;
+		}
+	#div {
+		font-size: 200%;
+		font-weight: bold;
+		color: #F60;
+		}
+	#return {
+		font-weight: bold;
+		}
+	#question {
+	font-size:450%;
+	color: #000;
+	}
+	@media all and (max-width: 480px) {
+	#score {
+		font-size: 100%;
+		}
+	#question {
+		font-size:200%;
+		color: #000;
+	}
+	#add {
+		font-size: 100%;
+		}
+	#sub {
+		font-size: 100%;
+		}
+	#mul {
+		font-size: 100%;
+		}
+	#div {
+		font-size: 100%;
+		}
+   }
+</style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="header">
+			<h3>What's Missing? <span class="label label-default">MiniGame</span></h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+					<h6>
+						Chọn dấu thích hợp điền vào chỗ trống!
+					</h6>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progress">
+						<div class="progress-bar" id="timer-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" >  
+  						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="score">
+					<p>Score: 0</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="question">
+					<p>
+
+					</p>
+				</div>
+			</div>
+			<div class="row">
+            	<div class="col-xs-2">
+				</div>
+				<div class="col-xs-2">
+                <button type="button" class="btn btn-default btn-block" id="add">
+						+
+					</button> 
+				</div>
+				<div class="col-xs-2">
+				<button type="button" class="btn btn-default btn-block" id="sub">
+						-
+					</button> 
+				</div>
+				<div class="col-xs-2">
+                <button type="button" class="btn btn-default btn-block" id="mul">
+						x
+					</button>
+				</div>
+				<div class="col-xs-2">
+				<button type="button" class="btn btn-default btn-block" id="div">
+						÷
+					</button>
+				</div>
+				<div class="col-xs-2">
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<p>---------</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="return">
+					<p>Go!Go!Go!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					 
+					<button type="button" class="btn btn-default" id="retry">
+						<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+				  </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<a href="homepage.html">&lt;&lt;Trở về trang chủ</a>	
+		</div>
+	</div>
+</div>
+
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/whatmissing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- co giãn kích thước ở mọi trạng thái -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Panda Online</title>
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body {
+            background: url(http://i.imgur.com/Nczsmy9.jpg) fixed no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- thêm thư viện jquery-->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Phần đầu của trang web-->
+    <header>
+        <!-- thanh navigation -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Panda Online</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" title="Luyện Tập">Luyện Tập</a></li>
+                        <li><a href="#" title="Kiểm Tra">Kiểm Tra</a></li>
+                        <li class="active"><a href="#" title="Kỹ Năng Sống">Kỹ Năng Sống <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#" title="Phụ Huynh">Phụ Huynh</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <button type="submit" class="btn btn-success">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Đăng Nhập</button>
+                        <button type="submit" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Đăng ký</button>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- thân của mục kỹ năng sống -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- Cột thứ 1 những mấu chuyện ngắn -->
+                <div class="col-md-6">
+                    <h2><b><a href="#" title="Truyện Ngắn">TRUYỆN NGẮN</a></b></h2>
+                    <div class="list-group">
+                        <b><button type="button" class="list-group-item">Sọ Dừa</button></b>
+                        <b><button type="button" class="list-group-item">Quạ Và Công</button></b>
+                        <b><button type="button" class="list-group-item">Thạch Sùng </button></b>
+                        <b><button type="button" class="list-group-item">Thánh Gióng</button></b>
+                        <b><button type="button" class="list-group-item">Cái Cân Thủy Ngân</button></b>
+                        <b><button type="button" class="list-group-item">Sự Tích Chim Đa Đa</button></b>
+                        <b><button type="button" class="list-group-item">Ai Mua Hành Tôi</button></b>
+                        <b><button type="button" class="list-group-item">Võ Tòng Giết Hổ Trên Đồi Cảnh Dương</button></b>
+                    </div>
+                    <button type="button" class="btn btn-warning">Xem thêm</button>
+                </div>
+                <!-- Cột thứ 2 quà tặng cuộc sống -->
+                <div class="col-md-6">
+                    <h2><b><a href="#" title="Quà Tặng Cuộc Sống">QUÀ TẶNG CUỘC SỐNG</a></b></h2>
+                    <div class="list-group">
+                        <b><button type="button" class="list-group-item">
+                     Gánh Xôi Của Bà
+                     <iframe width="520" height="300" src="https://www.youtube.com/embed/d5iJy6ZTw9c" frameborder="0" allowfullscreen>
+                     </iframe>
+                     </button></b>
+                        <b><button type="button" class="list-group-item">Lòng Tham</button></b>
+                        <b><button type="button" class="list-group-item">Trái Tim Yêu Thương</button></b>
+                        <b><button type="button" class="list-group-item">Chuyện Trên Vùng Cao</button></b>
+                        <!-- <button type="button" class="list-group-item">Sói Gấu Và Cáo</a>
+                     <button type="button" class="list-group-item">Tình Mẹ</a> -->
+                    </div>
+                    <button type="button" class="btn btn-warning">Xem thêm</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- chân trang -->
+    <footer>
+        <div class="right-block text-right"><b>© 2017 - VNU University of Engineering and Technology</b></div>
+    </footer>
+</body>
+
+</html>

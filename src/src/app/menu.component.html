@@ -1,0 +1,73 @@
+<body>
+<div class="container">
+    <header id="header" class="header container">
+        <div class="navbar navbar-fixed-top navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="http://bloghoahoc.com/img/logonho.png" width="50" height="50" />
+                    <a href="http://dethivatly.com" title="Đề thi Vật Lý">{{title}}</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nhập nội dung cần tìm">
+                        </div>
+                        <button type="submit" class="btn btn-default">Tìm kiếm</button>
+                    </form>
+                        </li>
+                        <li class="active">
+                            <a href="#"><b>ĐĂNG KÝ</b></a>
+                        </li>
+                        <li>
+                            <a href="#"><b>ĐĂNG NHẬP</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class = "container-fluid">
+        <div class="row">
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="http://bloghoahoc.com/img/logonho.png" width="50" height="50" />
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Trang chủ</a></li>
+                <li><a href="">Tài liệu</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Đề thi<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a routerLink="/de_thi" routerLinkActive="active">Đề thi Vật Lý 2014</a></li>
+                        <li><a routerLink="/de_thi" routerLinkActive="active">Đề thi Vật Lý 2015</a></li>
+                        <li><a routerLink="/de_thi" routerLinkActive="active">Đề thi Vật Lý 2016</a></li>
+                    </ul>
+                </li>
+                <li><a routerLink="/xac_nhan" routerLinkActive="active">Luyện thi</a></li>
+                <li><a href="#">Diễn đàn</a></li>
+                <li><a href="#">Hỏi Đáp</a></li>              
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+</header><!-- /header -->
+</div>
+</body>
