@@ -1,0 +1,34 @@
+<% provide :title, "Detail category" %>
+
+<h2><%= @category.name %></h2>
+<%= image_tag @category.photo.url %>
+<h3 class="panel-title">Description: </h3>
+<p><%= @category.description %></p>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="pull-right">
+      <%= link_to new_admin_category_word_path(@category),
+        class: "btn btn-primary" do %>
+        <span class="glyphicon glyphicon-plus-sign"></span> Add a word
+      <% end %>
+    </div>
+  </div>
+</div>
+<br/>
+
+<% if @words.any? %>
+  <table class="table table-hover">
+    <tr>
+      <th>Words</th>
+      <th>Meaning</th>
+      <th></th>
+    </tr>
+    <%= render @words %>
+  </table>
+  <div class="text-center">
+    <%= will_paginate @words %>
+  </div>
+<% else %>
+  <p>No word found</p>
+<% end %>

@@ -1,0 +1,42 @@
+<tr>
+  <td>
+    <b>#<%= lesson.id %></b>
+  </td>
+  <td>
+    <% if lesson.is_complete %>
+      <span class="text-success">
+        Completed
+      </span>
+    <% else %>
+      <span class="text-info">Learning</span>
+    <% end %>
+  </td>
+  <td>
+    <% if lesson.is_complete %>
+      <span class="text-success">
+        <%= [lesson.answers.correct.size, lesson.answers.size].join("/") + " " +
+          "words" %>
+      </span>
+    <% else %>
+      <span></span>
+    <% end %>
+  </td>
+  <td class="text-right">
+    <% if lesson.is_complete %>
+      <%= link_to lesson, class: "btn btn-default btn-xs" do %>
+        <span class="glyphicon glyphicon-eye-open"></span>
+        View results
+      <% end %>
+    <% else %>
+      <%= link_to lesson, class: "btn btn-primary btn-xs" do %>
+        <span class="glyphicon glyphicon-play"></span>
+        Continue
+      <% end %>
+    <% end %>
+    <%= link_to lesson, method: :delete,
+      class: "btn btn-danger btn-xs", data: {confirm: "You sure?"} do %>
+      <span class="glyphicon glyphicon-remove"></span>
+      Delete
+    <% end %>
+  </td>
+</tr>

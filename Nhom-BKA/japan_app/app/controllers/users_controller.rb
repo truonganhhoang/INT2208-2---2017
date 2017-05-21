@@ -1,13 +1,8 @@
 class UsersController < ApplicationController
 
-  def index
-    @users = User.paginate page: params[:page]
-  end
-
-  def show
-    @user = User.find_by id: params[:id]
-    render_404 if @user.nil?
-  end
+  before_action :load_user, except: [:new, :create, :index]
+  before_action :logged_in_user, except: [:new, :create]
+  before_action :check_correct_user, except: [:new, :create, :index]
 
   def new
     @user = User.new
@@ -17,16 +12,38 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       log_in @user
-      flash[:success] = t ".signup_success"
+      flash[:success] = "Welcome to the Japanese-learning System"
       redirect_to @user
     else
-      flash.now[:danger] = t ".signup_fail"
       render :new
+    end
+  end
+
+  def index
+    @users = User.search(params[:name]).order(name: :desc).paginate page: params[:page],
+      per_page: Settings.user_entry_per_page
+  end
+
+  def show
+    @activities = Activity.feed_activities(current_user.id)
+      .order(created_at: :desc).paginate page: params[:page],
+        per_page: Settings.home_activities_limit
+  end
+
+  def edit
+  end
+
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = "Profile updated !"
+      redirect_to @user
+    else
+      render :edit
     end
   end
 
   private
   def user_params
-    params.require(:user).permit :user_name, :email, :password, :password_confirmation
+    params.require(:user).permit :name, :email, :password, :password_confirmation, :phone, :address
   end
 end
