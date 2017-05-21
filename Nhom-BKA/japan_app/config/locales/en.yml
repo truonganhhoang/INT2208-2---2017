@@ -1,0 +1,50 @@
+en:
+  base_title: "Japanese-learning System"
+  about: "About"
+  contact: "Contact"
+  help: "Help"
+  home: "Home"
+  login: "Login"
+
+  activities:
+    action_name:
+      login: "login"
+      logout: "logout"
+      follow: "follow"
+      unfollow: "unfollow"
+      start_lesson: "start lesson"
+      finish_lesson: "finish lesson"
+      destroy_lesson: "delete lesson"
+  no_activity_found: "No activity found"
+  activities_title: "Activities"
+  you_text: "You"
+  at_text: "at"
+  of_text: "of"
+
+  layouts:
+    application:
+    footer:
+      project_name: "The "
+      project_name_link_text: "Project"
+      author: "by "
+      author_link_text: "BKA"
+    header:
+      logo_title: "BKA"
+  static_pages:
+    about:
+      about_title: "About"
+      about_intro: "The Ruby on Rails Tutorial is a book and screencast series
+        to teach web development with Ruby on Rails.
+        This is the sample application for the tutorial."
+    contact:
+      contact_title: "Contact"
+      contact_intro: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_intro_link: contact page
+    help:
+      help_title: "Help"
+      help_intro: "Get help on the Ruby on Rails Tutorial at the"
+      help_intro_link_text: "Rails Tutorial help section."
+    home:
+      greeting: "Welcome to"
+      intro: "This is the home page for the Japanese-learning System"
+      signupnow: "Sign up now!"

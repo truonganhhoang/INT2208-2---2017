@@ -1,0 +1,14 @@
+follow_entry_per_page: 10
+user_entry_per_page: 10
+admin_user_entry_per_page: 20
+admin_category_entry_per_page: 9
+follower_limit: 10
+user_limit: 10
+admin_user_limit: 20
+admin_category_limit: 9
+admin_word_limit: 20
+default_answer_limit: 2
+correct_answers_min: 1
+word_of_list_limit: 20
+word_of_lesson_limit: 3
+home_activities_limit: 30

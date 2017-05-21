@@ -1,0 +1,36 @@
+<% provide :title, "Category" %>
+
+<h2><%= @category.name %></h2>
+<%= image_tag @category.photo.url %>
+<h3 class="panel-title">Description: </h3>
+<p><%= @category.description %></p>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="pull-right">
+      <%= link_to category_lessons_path(@category), method: :post,
+        class: "btn btn-primary" do %>
+        <span class="glyphicon glyphicon-play"></span> Start new lesson
+      <% end %>
+    </div>
+  </div>
+</div>
+<hr/>
+<h3>Lessons</h3>
+
+<% if @lessons.any? %>
+  <table class="table table-hover">
+    <tr>
+      <th>Lessons</th>
+      <th>Status</th>
+      <th>Results</th>
+      <th></th>
+    </tr>
+    <%= render @lessons %>
+  </table>
+  <div class="text-center">
+    <%= will_paginate @lessons %>
+  </div>
+<% else %>
+  <p>No lesson found</p>
+<% end %>

@@ -1,0 +1,7 @@
+Feature: Show user words that they learned
+                user can listen and see words again.
+
+
+Scenario: 
+	when i click on the  "Speak" button
+	i would hear the pronouniation of this word.
