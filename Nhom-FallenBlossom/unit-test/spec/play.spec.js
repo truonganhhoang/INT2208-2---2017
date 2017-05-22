@@ -57,7 +57,8 @@
                fixture.detectChanges();
                expect(mockScope.notify).toEqual(Chính xác!');
                   expect(mockScope.correct).toEqual(1);
-               }))
+               }));
+	  
     it('tôi chọn đáp án: "12"', function () {
                const fixture = TestBed.createController(myController);
                const mockScope = fixture.debugElement.controllerInstance;
