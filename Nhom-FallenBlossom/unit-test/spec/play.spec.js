@@ -55,7 +55,7 @@
                const choice = fixture.debugElement.query(By.css('#n2'));
                choice.triggerEventHandler('click', null);
                fixture.detectChanges();
-               expect(mockScope.notify).toEqual(Chính xác!');
+               expect(mockScope.notify).toEqual('Chính xác!');
                   expect(mockScope.correct).toEqual(1);
                }));
 	  
