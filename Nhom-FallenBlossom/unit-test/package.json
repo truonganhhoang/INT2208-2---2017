@@ -1,0 +1,38 @@
+{
+  "name": "Testing",
+  "version": "0.0.1",
+  "description": "angularjs unit testing with jasmine and karma reference demo project",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nir Kaufman <nirkaufman@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "^0.12.14",
+    "karma-jasmine": "^0.1.5",
+    "karma-chrome-launcher": "^0.1.3"
+  },
+  "name": "UTestJVS",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karma-runner/gulp-karma"
+  },
+  "bugs": {
+    "url": "https://github.com/karma-runner/gulp-karma/issues"
+  },
+  "homepage": "https://github.com/karma-runner/gulp-karma",
+  "devDependencies": {
+    "karma": "^0.13.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-firefox-launcher": "^0.2.0",  //Or your chosen browser
+    "gulp": "^3.9.0"
+  }  
+}
