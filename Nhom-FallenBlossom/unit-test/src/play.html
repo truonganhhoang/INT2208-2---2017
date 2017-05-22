@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Chơi trò chơi với Kids Math</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+      <!-- 1. Load libraries -->
+      <script src="level1.config.js"></script>
+      <script src="level1.function.js"></script>
+
+      <!-- 3. Configure jasmine -->
+      <link rel="shortcut icon" type="image/png" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/jasmine.css">
+      <link rel="stylesheet" href="lib/jasmine-2.2.0/jasmine.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/jasmine.js"></script>
+      <script src=" https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/jasmine-html.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/boot.js"></script>
+      <!-- include spec files here... -->
+      <script src="spec/play.spec.js"></script>
+      <script>
+         System.import('app').catch(function(err){ console.error(err); });
+      </script>
+      <style>
+         #footer {
+         background: white;
+         }
+         input[type=checkbox] {
+         zoom: 2.5;
+         }
+         li a:hover {
+         background-color: #111;
+         }
+         #font {
+         background-color: wheat;
+         }
+         #comment {
+         background: white;
+         }
+      </style>
+   </head>
+   <body background="http://i.imgur.com/9oA0fjS.jpg""ng-app="myapp">
+      <div class="row">
+         <div class="col-md-2 col-xs-3 ">
+            <button type="button" class="btn-lg btn-default" aria-label="Left Align"><a href="../../../index.html"><b style="font-family: 'Roboto Slab', serif; color:#660033">Trang chủ</b></a>	
+            <span class="glyphicon glyphicon-home"></span> 
+            </button>
+         </div>
+         <div class="col-md-2 col-xs-2 col-xs-offset-2">
+            <h3><font color="#004800"><span id="rank">{{numberOfQuetions}} </span></font></h3>
+         </div>
+         <div class="col-md-2 col-xs-2">
+            <h3><font color="#004800"><span class="glyphicon glyphicon glyphicon-ok-circle" aria-hidden="true" id="correct">{{correct}}</span><b></b></font></h3>
+         </div>
+         <div class="col-md-2 col-xs-2">
+            <h3><font color="#990000"><span class="glyphicon glyphicon glyphicon-remove-circle" aria-hidden="true" id="incorrect">{{incorrect}}</span><b></b></font></h3>
+         </div>
+      </div>
+      <div class="row" align="center">
+         <div class="row" align="center">
+            <div class="col-md-2 col-md-offset-5 ">
+               <b>
+                  <p id="notify">{{notify}}</p>
+               </b>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+               <h4 id="h-typeOfQuestions">{{title}}</h4>
+               <img id="anh" src="" alt="">
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+               <h1 style="font-family: 'Roboto Slab', serif; color:#C00; font-weight:bold  " id="h-questions" class="text-center"></h1>
+            </div>
+         </div>
+         <div class="row" align = "center">
+            <div class="col-md-1 col-xs-3 col-md-offset-4  ">
+               <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="0">{{results[0]}}</label></h2>
+               <input type="checkbox"  id="n0" (click) = "onChoose(0)" name="pop" value="a" onclick="submitAnswer()">
+            </div>
+            <div class="col-md-1 col-xs-3 ">
+               <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="1">{{results[1]}}</label></h2>
+               <input type="checkbox" id="n1" (click) = "onChoose(1)"  name="pop" value="b"  onclick="submitAnswer()">  
+            </div>
+            <div class="col-md-1 col-xs-3 ">
+               <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="2">{{results[2]}}</label></h2>
+               <input  type="checkbox" id="n2" (click) = "onChoose(2)"  name="pop" value="c"     onclick="submitAnswer()">
+            </div>
+            <div class="col-md-1 col-xs-3 ">
+               <h2 style="font-family: 'Roboto Slab', serif; color:#006"><label for="" id="3">{{results[3]}}</label></h2>
+               <input  type="checkbox" id="n3" (click) = "onChoose(3)"  name="pop" value="d"    onclick="submitAnswer()">
+            </div>
+         </div>
+         <table align="center">
+            <tr>
+               <td height="20" width="20"></td>
+            </tr>
+         </table>
+         <div class="row">
+            <div class="col-md-2 col-xs-8 col-md-offset-4 col-xs-offset-2">
+               <button type="button" class="button btn-danger btn-lg" onclick="render()">Câu tiếp </button>
+            </div>
+            <div class="col-md-2 col-xs-6 " id="font">
+               <h3 id="end"> {{nextlevel}}</h3>
+            </div>
+         </div>
+      </div>
+      <table align="center">
+         <tr>
+            <td height="200" width="200"></td>
+         </tr>
+      </table>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/bootstrap.min.js"></script>
+      <script>
+         render();
+      </script>
+
+      <table align="center">
+         <tr>
+            <td height="120" width="120"></td>
+         </tr>
+      </table>
+      <footer id="footer" class="navbar-fixed-bottom navbar-center " background="#006">
+         <center><b>© FallenBlossom Team - VNU University of Engineering and Technology</b></center>
+      </footer>
+   </body>
+</html>
